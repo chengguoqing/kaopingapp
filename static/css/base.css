@@ -937,7 +937,9 @@ textarea {
 .cr {
 	text-align: right;
 }
-
+.ln{
+	line-height: 1.5;
+}
 .qc {
 	clear: both;
 }

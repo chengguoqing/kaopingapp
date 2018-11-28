@@ -80,16 +80,16 @@
 
 		</view>
 
-		<view class="dsf_jh_det pt30">
+		<view class="dsf_jh_det pt30 bgff">
 
 			<van-row>
-				<van-col span="6" v-for="sd in 6">
+				<van-col span="6" v-for="sd in maiyu_sd">
 					<view class="cen mb30">
 
 
-						<image src="../../static/img/mai.png" class="sd_derttxc"></image>
+						<image :src="sd.img" class="sd_derttxc"></image>
 						<view class="fz30 ">
-							我要买
+							{{sd.name}}
 						</view>
 					</view>
 				</van-col>
@@ -117,6 +117,27 @@
 				indicator: "#B4B4B4", //点的颜色
 				interval: 5000,
 				duration: 1000,
+				maiyu_sd:[
+					{
+						name:"我要买",
+						img:"../../static/img/mai.png"
+					},{
+						name:"我要卖",
+						img:"../../static/img/dff_b.png"
+					},{
+						name:"反腐审计",
+						img:"../../static/img/dff_c.png"
+					},{
+						name:"盘点",
+						img:"../../static/img/dff_d.png"
+					},{
+						name:"报产量",
+						img:"../../static/img/dff_e.png"
+					},{
+						name:"更多",
+						img:"../../static/img/dff_f.png"
+					}
+				]
 
 			}
 		},

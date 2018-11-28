@@ -24,7 +24,7 @@
 						<view class="z9 dsf_jjh_eer">
 							<text class="fz50 z3 b">80</text>分
 							<view class="fz22 ">
-								当前已进行
+								当前已进行<br>
 								<text class="ye">1:05:30:20</text>
 							</view>
 						</view>
@@ -222,30 +222,8 @@
 		width: 50upx;
 		height: 50upx;
 	}
-	.bjhg_sddf {
-		width: 160upx;
-		height: 80upx;
-		line-height: 80upx;
-		background:#449ef6 ;
-		text-align: center;
-		color: #fff;
-	}
-	.df_dertxfcrdr{
-		background: #fff;
-		height: 80upx;
-		padding-top: 20upx;
-		line-height: 80upx;
-	}
+	
 
-	.df_dertxfcrdr input{
-		width: 100%;
-		font-size: 32upx;
-	}
-	.sdf_dfrtd{
-		position: relative;
-		left: 0;
-		bottom: 20upx;
-		width: 100%;
-		
-	}
+
+	
 </style>

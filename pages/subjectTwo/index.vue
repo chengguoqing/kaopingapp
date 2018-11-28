@@ -174,28 +174,5 @@
 		top: 0;
 	}
 
-	.sd_deert {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		text-align: center;
-		border-top: 1px solid #EEEEEE;
-		background: #fff;
-		line-height: 100upx;
-	}
-
-	.df_kse {
-		color: #479EF6;
-		border-right: 1px solid #EEEEEE;
-	}
-
-	.df_kse:last-child {
-		border: 0px;
-	}
-
-	.df_kse.act {
-		background: #479EF6;
-		color: #fff;
-	}
+	
 </style>

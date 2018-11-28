@@ -1,4 +1,124 @@
-	.user_icon {
-		width: 130upx;
-		height: 130upx;
-	}
+.user_icon {
+	width: 130upx;
+	height: 130upx;
+}
+
+.sd_deert {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #EEEEEE;
+	background: #fff;
+	line-height: 100upx;
+}
+
+.df_kse {
+	color: #479EF6;
+	border-right: 1px solid #EEEEEE;
+}
+
+.df_kse:last-child {
+	border: 0px;
+}
+
+.df_kse.act {
+	background: #479EF6;
+	color: #fff;
+}
+
+.sdf_dfrtd {
+	position: relative;
+	left: 0;
+	bottom: 20upx;
+	width: 100%;
+
+}
+
+.df_dertxfcrdr input {
+	width: 100%;
+	font-size: 32upx;
+}
+
+.df_dertxfcrdr {
+	background: #fff;
+	height: 80upx;
+	padding-top: 20upx;
+	line-height: 80upx;
+}
+
+.bjhg_sddf {
+	width: 160upx;
+	height: 80upx;
+	line-height: 80upx;
+	background: #449ef6;
+	text-align: center;
+	color: #fff;
+}
+
+
+
+.sd_jh_deert {
+	width: 70upx;
+	height: 40upx;
+}
+
+.df_df_ertxc {
+	width: 70upx;
+}
+
+.dsf_gouxuan {
+	width: 40upx;
+	height: 40upx;
+	text-align: center;
+	line-height: 40upx;
+	color: #999;
+	border: 1px solid #E8E8E8;
+}
+
+.df_c_ertx {
+	position: relative;
+	display: none;
+	bottom: 10upx;
+}
+
+.df_c_ertx.act {
+	display: block;
+}
+
+.right_ert {
+	position: absolute;
+	right: 20rpx;
+	top: 0rpx;
+}
+
+.sd_drrtxc {
+	border-radius: 50%;
+	font-size: 32upx;
+	color: #fff;
+	display: inline-block;
+	width: 50upx;
+	text-align: center;
+	margin-right: 10upx;
+	height: 50upx;
+	line-height: 50upx;
+	position: relative;
+
+	background: #A6D2F7;
+}
+
+.gfh_jh_dertt {
+	line-height: 90upx;
+}
+
+.del_x {
+	text-decoration: line-through;
+	color: #999;
+}
+
+.sdf_dfrtd {
+	position: fixed;
+	left: 0;
+	bottom: 20upx;
+}
