@@ -1,0 +1,43 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/subjectTwo/index",
+			"style": {
+				"navigationBarTitleText": "考评主页 ",
+				"usingComponents": {
+					"van-row": "/wxcomponents/row/index",
+					"van-col": "/wxcomponents/col/index"
+				}
+
+			}
+		}, {
+			"path": "pages/subjectTwo/examination_hall",
+			"style": {
+				"navigationBarTitleText": "科举大厅 "
+			}
+		}, {
+			"path": "pages/subjectTwo/my_evaluation",
+			"style": {
+				"navigationBarTitleText": "我的考评情况"
+
+			}
+		}, {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+
+				"usingComponents": {
+					"van-notice-bar": "/wxcomponents/notice-bar/index",
+					"van-toast": "/wxcomponents/toast/index",
+					"van-row": "/wxcomponents/row/index",
+					"van-col": "/wxcomponents/col/index",
+					"van-button": "/wxcomponents/button/index"
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#489EF8"
+	}
+}
