@@ -154,6 +154,7 @@
 				</view>
 			</view>
 		</view>
+		
 		<view class="btm pd pt20 pm20 bgff">
 			<view class="fz30 z3">
 				上传盘点照片

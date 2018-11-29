@@ -1,6 +1,6 @@
 <!-- tab切换 -->
 <template>
-	<view class="box cen dsf_ddrertxc">
+	<view class="box cen dsf_ddrertxc" :class="is_sdf==1?'act':''">
 		<view class="box_a df_fd_sdrert" :class="sd.cls" v-for="sd in sd_dfg" @click="sd_sddf(sd)">
 			<text class="pd fz32 z6">{{sd.name}}</text>
 		</view>
@@ -9,7 +9,8 @@
 <script>
 	export default {
 		props:{
-			sd_dfg:''
+			sd_dfg:'',
+			is_sdf:""
 		},
 		data() {
 			return {}
@@ -36,6 +37,9 @@
 		line-height: 100upx;
 		height: 100upx;
 		width: 100%;
+	}
+	.dsf_ddrertxc.act{
+		position: relative;
 	}
 	.df_fd_sdrert.act text{
 		padding-bottom: 26upx;
