@@ -1,9 +1,48 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/subjectThree/equipment_inventory",
+			"style": {
+				"navigationBarTitleText": "设备盘点"
+
+			}
+		}, {
+			"path": "pages/subjectThree/Internal_marketing",
+			"style": {
+				"navigationBarTitleText": "内部购销列表"
+
+			}
+		}, {
+			"path": "pages/subjectThree/yield",
+			"style": {
+				"navigationBarTitleText": "产量-本周"
+
+			}
+		}, {
+			"path": "pages/subjectThree/yield_er",
+			"style": {
+				"navigationBarTitleText": "产量-本月"
+
+			}
+		}, {
+			"path": "pages/subjectTwo/examination_hall",
+			"style": {
+				"navigationBarTitleText": "科举大厅 "
+			}
+		}, {
+			"path": "pages/subjectThree/purchasing_requisition",
+			"style": {
+				"navigationBarTitleText": "采购申请",
+				"usingComponents": {
+					"van-field": "/wxcomponents/field/index",
+					"van-cell": "/wxcomponents/cell/index",
+					"van-cell-group": "/wxcomponents/cell-group/index"
+				}
+			}
+		}, {
 			"path": "pages/index"
-			
-		},{
+
+		}, {
 			"path": "pages/subjectThree/msg_gl",
 			"style": {
 				"navigationBarTitleText": "消息",
@@ -56,11 +95,6 @@
 					"van-row": "/wxcomponents/row/index",
 					"van-col": "/wxcomponents/col/index"
 				}
-			}
-		}, {
-			"path": "pages/subjectTwo/examination_hall",
-			"style": {
-				"navigationBarTitleText": "科举大厅 "
 			}
 		}, {
 			"path": "pages/subjectTwo/my_evaluation",

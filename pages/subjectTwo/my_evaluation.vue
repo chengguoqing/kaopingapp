@@ -45,7 +45,7 @@
 			<view class="df_jh_deert bgff">
 				<mpvue-echarts :echarts="echarts" :onInit="pieInit" canvasId="pieon" />
 			</view>
-			
+			 
 			
 			<view class="pd pt20 pm20 fz30">下级评价</view>
 			<view class="df_jh_deert bgff">

@@ -122,3 +122,75 @@
 	left: 0;
 	bottom: 20upx;
 }
+
+.dx_btn {
+	border-radius: 8upx;
+	background: #489FF7;
+	color: #fff;
+	line-height: 90upx;
+	height: 90upx;
+	text-align: center;
+	font-size: 32upx;
+}
+
+.dsf_hg_der {
+	border: 1px solid #479EF6;
+	height: 65upx;
+	line-height: 65upx;
+}
+
+.df_sd_dert {
+	color: #479EF6;
+	font-size: 32upx;
+	text-align: center;
+}
+
+.df_sd_dert.act {
+	background: #479EF6;
+	color: #fff;
+
+}
+
+
+
+.sddsff {
+	width: 140upx;
+	float: left;
+}
+
+.df_jhh_deert {
+	border-radius: 8upx;
+	text-align: center;
+	width: 120upx;
+	height: 120upx;
+	line-height: 120upx;
+	border: 1px dashed #E5E5E5;
+}
+
+.df_jhh_deert image {
+	width: 100%;
+	height: 100%;
+}
+
+.df_jhh_deert icon {
+	font-size: 60upx;
+}
+
+.sdf_dfgxe {
+	height: 60upx;
+	line-height: 60upx;
+	padding-left: 30upx;
+	padding-right: 30upx;
+	font-size: 30upx;
+	background: #FF4701;
+	display: inline-block;
+	color: #fff;
+}
+
+.sdf_dfgxe.ab {
+	background: #00AA01;
+}
+
+.sdf_dfgxe.ac {
+	background: #489DF6;
+}

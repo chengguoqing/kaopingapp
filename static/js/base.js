@@ -97,43 +97,13 @@ exports.base = {
 		}
 
 		Vue.prototype.pz = function(call, kje) { //拍照 
-
-			var sd_der = {}
-			sd_der.event = kje || 1
-
-			ajax_e("/api/common/getQiniuToken", sd_der, function(data, all_data) {
-				let token = data.token,
-					domain = data.domain
 				uni.chooseImage({
 					count: 1,
 					success(res) {
-						var key = res.tempFilePaths[0];
-						key = Base64.encode(key);
-						uni.showLoading({
-							title: '图片上传中...',
-							mask: true
-						});
-						uni.uploadFile({
-							url: 'http://up.qiniu.com/', //仅为示例，非真实的接口地址
-							filePath: res.tempFilePaths[0],
-							name: 'file',
-							formData: {
-								token: token,
-								key: key
-							},
-							success: (uploadFileRes) => {
-								uni.hideLoading();
-								let sdf_dr = JSON.parse(uploadFileRes.data)
-
-								call(domain + sdf_dr.data.url)
-							}
-						});
+						
+						
 					}
 				})
-			})
-
-
-
 		}
 
 

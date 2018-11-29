@@ -2,7 +2,7 @@
 	<view>
 		<van-tabs>
 			<van-tab title="全部" sticky swipeable>
-				<view class="pd pt20 pm20 bgff bbm" v-for="sd in 10">
+				<view class="pd pt20 pm20 bgff bbm ln" v-for="sd in 10">
 					<view class="box">
 						<view class="box_b fz32">
 							申述
@@ -18,7 +18,7 @@
 
 			</van-tab>
 			<van-tab title="未读">
-				<view class="pd pt20 pm20 bgff bbm" v-for="sd in 2">
+				<view class="pd pt20 pm20 bgff bbm ln" v-for="sd in 2">
 					<view class="box">
 						<view class="box_b fz32">
 							申述
@@ -33,7 +33,7 @@
 				</view>
 			</van-tab>
 			<van-tab title="已读">
-				<view class="pd pt20 pm20 bgff bbm" v-for="sd in 5">
+				<view class="pd pt20 pm20 bgff bbm ln" v-for="sd in 5">
 					<view class="box">
 						<view class="box_b fz32">
 							申述

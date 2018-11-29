@@ -138,7 +138,27 @@ p {
 .fz40 {
 	font-size: 40upx !important;
 }
-
+.fz41 {
+	font-size: 41upx !important;
+}
+.fz42 {
+	font-size: 42upx !important;
+}
+.fz43 {
+	font-size: 43upx !important;
+}
+.fz44 {
+	font-size: 44upx !important;
+}
+.fz45 {
+	font-size: 45upx !important;
+}
+.fz46 {
+	font-size: 46upx !important;
+}
+.fz47 {
+	font-size: 47upx !important;
+}
 .fz48 {
 	font-size: 48upx !important;
 }
@@ -908,6 +928,9 @@ textarea {
 
 .blm {
 	border-left: 1px solid #F8F8F8;
+}
+.z3{
+	color: #333;
 }
 
 .z6 {

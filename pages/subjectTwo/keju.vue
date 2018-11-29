@@ -63,20 +63,7 @@
 
 	}
 
-	.dsf_hg_der {
-		border: 1px solid #479EF6;
-		height: 65upx;
-		line-height: 65upx;
-	}
 
-	.df_sd_dert {
-		color: #479EF6;
-		text-align: center;
-	}
 
-	.df_sd_dert.act {
-		background: #479EF6;
-		color: #fff;
-
-	}
+	
 </style>

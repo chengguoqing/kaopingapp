@@ -70,7 +70,7 @@
 <script>
 	import * as echarts from '../../components/echarts/echarts.simple.min.js';
 	import mpvueEcharts from '../../components/mpvue-echarts/src/echarts.vue';
-
+ 
 	function getPieOption() {
 		return {
 			tooltip: {

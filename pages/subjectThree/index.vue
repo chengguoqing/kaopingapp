@@ -27,7 +27,7 @@
 
 			<van-row>
 				<van-col span="12">
-					<view class="pd pt20 pm20 brm">
+					<view class="pd pt20 pm20 brm ln">
 						<view class="fz32 z3">
 							合累计收入
 						</view>
@@ -38,7 +38,7 @@
 
 				</van-col>
 				<van-col span="12">
-					<view class="pd pt20 pm20">
+					<view class="pd pt20 pm20 ln">
 						<view class="fz32 z3">
 							合累计费用
 						</view>
@@ -51,7 +51,7 @@
 
 
 				<van-col span="12">
-					<view class="pd pt20 pm20 btm brm">
+					<view class="pd pt20 pm20 btm brm ln">
 						<view class="fz32 z3">
 							合附加价值同比
 						</view>
@@ -65,7 +65,7 @@
 
 
 				<van-col span="12">
-					<view class="pd pt20 pm20 btm">
+					<view class="pd pt20 pm20 btm ln">
 						<view class="fz32 z3">
 							合附加价值环比
 						</view>
@@ -84,7 +84,7 @@
 
 			<van-row>
 				<van-col span="6" v-for="sd in maiyu_sd">
-					<view class="cen mb30">
+					<view class="cen mb30 ln">
 
 
 						<image :src="sd.img" class="sd_derttxc"></image>
