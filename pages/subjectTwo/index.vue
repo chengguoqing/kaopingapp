@@ -105,7 +105,7 @@
 				if (!sd.href) {
 					return
 				}
-				uni.navigateTo({
+				uni.redirectTo({
 					url: sd.href
 				});
 			}

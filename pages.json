@@ -1,16 +1,55 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+
+		}, {
+			"path": "pages/subjectOne/leave_superior",
+			"style": {
+				"navigationBarTitleText": "我开出的-上级"
+			}
+		}, {
+			"path": "pages/subjectOne/send_bill_me",
+			"style": {
+				"navigationBarTitleText": "发单-开给我的"
+			}
+		}, {
+			"path": "pages/subjectOne/leave_the_chuli",
+			"style": {
+				"navigationBarTitleText": "我开出的-处理"
+			}
+		}, {
+			"path": "pages/subjectOne/leave_the",
+			"style": {
+				"navigationBarTitleText": "我开出的"
+			}
+		}, {
+			"path": "pages/subjectOne/details_test_er",
+			"style": {
+				"navigationBarTitleText": "考试详情",
+				"usingComponents": {
+					"van-popup": "/wxcomponents/popup/index"
+				}
+			}
+		}, {
+			"path": "pages/subjectOne/record_details",
+			"style": {
+				"navigationBarTitleText": "成绩详情"
+			}
+		}, {
 			"path": "pages/subjectOne/details_test",
 			"style": {
 				"navigationBarTitleText": "考试详情"
 			}
-		},{
+		}, {
 			"path": "pages/subjectOne/attendance_details",
 			"style": {
 				"navigationBarTitleText": "考勤详情"
 			}
-		},{
+		}, {
 			"path": "pages/subjectOne/behavioral_details",
 			"style": {
 				"navigationBarTitleText": "行为详情"
@@ -25,12 +64,6 @@
 			"style": {
 				"navigationBarTitleText": "人工费用汇总"
 			}
-		}, {
-			"path": "pages/index",
-			"style": {
-				"navigationBarTitleText": "首页"
-			}
-
 		}, {
 			"path": "pages/subjectOne/my_pay_slip",
 			"style": {
