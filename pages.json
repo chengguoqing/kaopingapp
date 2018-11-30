@@ -1,6 +1,31 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/subjectOne/details_test",
+			"style": {
+				"navigationBarTitleText": "考试详情"
+			}
+		},{
+			"path": "pages/subjectOne/attendance_details",
+			"style": {
+				"navigationBarTitleText": "考勤详情"
+			}
+		},{
+			"path": "pages/subjectOne/behavioral_details",
+			"style": {
+				"navigationBarTitleText": "行为详情"
+			}
+		}, {
+			"path": "pages/subjectOne/labor_summary_er",
+			"style": {
+				"navigationBarTitleText": "人工费用汇总"
+			}
+		}, {
+			"path": "pages/subjectOne/labor_summary",
+			"style": {
+				"navigationBarTitleText": "人工费用汇总"
+			}
+		}, {
 			"path": "pages/index",
 			"style": {
 				"navigationBarTitleText": "首页"
