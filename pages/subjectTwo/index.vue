@@ -5,7 +5,11 @@
 
 			<image src="../../static/img/left.png" class="sdf_deert mr40 cz"></image>
 
-			<text class="cz">2018年10月</text>
+			<view class="cz f_b"><picker class="picker-item" mode="date"  @change="dateChange" end="2020-01-01" start="2010-01-01">
+					        
+								 {{time}} 
+					
+					        </picker></view>
 
 			<image src="../../static/img/right.png" class="sdf_deert ml40 cz"></image>
 
@@ -76,6 +80,8 @@
 	export default {
 		data() {
 			return {
+				time:"2018年10月",
+
 				sd_sdf: [{
 						cls: "act",
 						href: "",
@@ -97,6 +103,10 @@
 		},
 		components: {},
 		methods: {
+			dateChange(evt){
+				let date_e=evt.detail.value.split("-")
+				this.time = date_e[0]+"年"+date_e[1]+"月";
+			},
 			xzdfd(sd) {
 				this.sd_sdf.map(a => {
 					a.cls = ""

@@ -3,11 +3,18 @@
 		<view class="pd pt20 pm20 bgff">
 			<view class="box">
 				<view class="box_a ls fz30">
-					2018年10月 <icon class="dx icon-down"></icon>
+					 <picker class="picker-item" mode="date"  @change="dateChange" end="2020-01-01" start="2010-01-01">
+        
+			 {{time}} <icon class="dx icon-down"></icon>
+
+        </picker>
+		
+		
+				
 				</view>
 				<view class="box_a tr">
 					<view class="ssd_dffgxc pr f_b tl">
-						<input type="text" placeholder="搜索人名" />
+						<input type="text" placeholder="搜索人名" /> 
 						<icon class="dx icon-sousuo z9"></icon>
 					</view>
 					
@@ -140,13 +147,19 @@
 	export default {
 		data() {
 			return {
+				time:"2018年10月",
 				date_d:[1,2,3,4,5,6]
 			}
 		},
 		components: {
 			huanxing
 		},
-		methods: {},
+		methods: {
+			dateChange(evt){
+				let date_e=evt.detail.value.split("-")
+				 this.time = date_e[0]+"年"+date_e[1]+"月";
+			}
+		},
 		mounted() {},
 	}
 </script>

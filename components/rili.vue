@@ -8,11 +8,11 @@
 
 					<view class="cen">
 
-						<image src="../../static/img/left.png" class="sdf_deert mr40 cz" @click="pickPre(currentYear,currentMonth)"></image>
+						<image src="/static/img/left.png" class="sdf_deert mr40 cz" @click="pickPre(currentYear,currentMonth)"></image>
 
 						<text class="cz">{{ currentYear }}年 {{ currentMonth }}月</text>
 
-						<image src="../../static/img/right.png" class="sdf_deert ml40 cz" @click="pickNext(currentYear,currentMonth)"></image>
+						<image src="/static/img/right.png" class="sdf_deert ml40 cz" @click="pickNext(currentYear,currentMonth)"></image>
 
 					</view>
 				</view>
@@ -43,6 +43,12 @@
 
 		</view>
 
+		<view class="cen bgff" v-if="sd_h_d==7">
+			<view class="yj br dsf_jh_deerttx f_b" @click="zankai_er">
+				<icon class="dx icon-down fz26 z9 cz" ></icon>
+			</view>
+		</view>
+
 
 
 
@@ -53,6 +59,9 @@
 </template>
 <script>
 	export default {
+		props: {
+			is_ddf: ""
+		},
 		data() {
 			return {
 				currentDay: 1,
@@ -152,11 +161,35 @@
 				if (d < 10) d = "0" + d;
 				return y + "-" + m + "-" + d
 			},
+			zankai_er() {
+				var d = new Date();
+			d.setDate(0);
+
+				if(this.sd_h_d==7){
+					this.sd_h_d = 42
+				}else{
+					this.sd_h_d = 7
+				}
+				try{
+					this.$emit('sddffff')
+				}catch(e){
+					
+				}
+				
+			
+				this.initData(this.formatDate(d.getFullYear(), d.getMonth() + 2, 1), this.sd_h_d);
+			}
 		},
 		onLoad: function() {
 			var d = new Date();
 			d.setDate(0);
+			if (this.is_ddf) {
+				this.sd_h_d=7
+			}
 			this.initData(this.formatDate(d.getFullYear(), d.getMonth() + 2, 1), this.sd_h_d);
+				
+			
+			
 		},
 		mounted() {
 
@@ -325,5 +358,16 @@
 
 	.f_b {
 		display: inline-block !important;
+	}
+
+	.dsf_jh_deerttx {
+		width: 60upx;
+		height: 60upx;
+		background: #F9F8F7;
+		margin-top: -30upx;
+		line-height: 41upx !important;
+	}
+	.xuanss{
+		transform: rotate(180deg);
 	}
 </style>

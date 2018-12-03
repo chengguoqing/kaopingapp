@@ -230,11 +230,5 @@
 	.df_jh_drrtxrt {
 		margin-top: 400upx;
 	}
-	.sd_kh_deert{
-		border: 1px solid #F6F5F4;
-		width: 436upx;
-		height: 200upx;
-		padding: 20upx;
-		font-size: 30upx;
-	}
+	
 </style>

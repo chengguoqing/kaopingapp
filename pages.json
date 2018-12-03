@@ -7,6 +7,52 @@
 			}
 
 		}, {
+			"path": "pages/subjectOne/clocking_in/direct_inspection_list",
+			"style": {
+				"navigationBarTitleText": "直检（10月23日）",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "全选",
+								"fontSize": "16"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/subjectOne/clocking_in/spot_check",
+			"style": {
+				"navigationBarTitleText": "抽检（10月23日）"
+			}
+		}, {
+			"path": "pages/subjectOne/clocking_in/movement",
+			"style": {
+				"navigationBarTitleText": "行动轨迹分布图"
+			}
+		}, {
+			"path": "pages/subjectOne/clocking_in/department_holidays",
+			"style": {
+				"navigationBarTitleText": "设置部门公休日"
+			}
+		}, {
+			"path": "pages/subjectOne/clocking_in/abnormal_complaints_er",
+			"style": {
+				"navigationBarTitleText": "异常申诉二"
+			}
+		}, {
+			"path": "pages/subjectOne/clocking_in/abnormal_complaints",
+			"style": {
+				"navigationBarTitleText": "异常申诉"
+			}
+		}, {
+			"path": "pages/subjectOne/clocking_in/direct_inspection",
+			"style": {
+				"navigationBarTitleText": "直检"
+			}
+		}, {
 			"path": "pages/subjectOne/leave_superior",
 			"style": {
 				"navigationBarTitleText": "我开出的-上级"

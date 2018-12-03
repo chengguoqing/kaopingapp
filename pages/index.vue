@@ -21,6 +21,52 @@
 			return {
 				sd_ddf: [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 					{
+						"path": "pages/subjectOne/clocking_in/direct_inspection_list",
+						"style": {
+							"navigationBarTitleText": "直检（10月23日）",
+							"app-plus": {
+								"bounce": "none", //关闭窗口回弹效果
+								"titleNView": {
+									"buttons": [ //原生标题栏按钮配置,
+										{
+											"text": "全选",
+											"fontSize": "16"
+										}
+									]
+								}
+							}
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/spot_check",
+						"style": {
+							"navigationBarTitleText": "抽检（10月23日）"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/movement",
+						"style": {
+							"navigationBarTitleText": "行动轨迹分布图"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/department_holidays",
+						"style": {
+							"navigationBarTitleText": "设置部门公休日"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/abnormal_complaints_er",
+						"style": {
+							"navigationBarTitleText": "异常申诉二"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/abnormal_complaints",
+						"style": {
+							"navigationBarTitleText": "异常申诉"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/direct_inspection",
+						"style": {
+							"navigationBarTitleText": "直检"
+						}
+					}, {
 						"path": "pages/subjectOne/leave_superior",
 						"style": {
 							"navigationBarTitleText": "我开出的-上级"
@@ -196,24 +242,6 @@
 						"path": "pages/subjectTwo/my_evaluation",
 						"style": {
 							"navigationBarTitleText": "我的考评情况"
-
-						}
-					}, {
-						"path": "pages/subjectThree/sxy",
-						"style": {
-							"navigationBarTitleText": "产量-本周"
-
-						}
-					}, {
-						"path": "pages/subjectThree/gztai",
-						"style": {
-							"navigationBarTitleText": "产量-本周"
-
-						}
-					}, {
-						"path": "pages/subjectThree/user_center",
-						"style": {
-							"navigationBarTitleText": "产量-本周"
 
 						}
 					}

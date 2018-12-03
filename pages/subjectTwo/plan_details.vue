@@ -14,7 +14,7 @@
 
 		<view class="mt20">
 
-			<view class=" pd bgff gfh_jh_dertt dx_row pr">
+			<view class=" pd bgff gfh_jh_dertt dx_row pr"> 
 				<view class="df_df_ertxc f_b cz">
 					<icon class="dx icon-user fz40  z6"></icon>
 				</view>
@@ -34,9 +34,15 @@
 				<view class="f_b fz30 z3 cz pr">
 					<text class="z6">截止时间</text>
 				</view>
-				<view class="right_ert">
-					<text class="fz26 z6">201年10月1日</text>
-					<icon class="dx icon-right"></icon>
+				<view class="right_ert fz26 z6">
+					<!-- <text class="fz26 z6">201年10月1日</text>
+					<icon class="dx icon-right"></icon> -->
+					<picker class="picker-item" mode="date"  @change="dateChange" end="2020-01-01" start="2010-01-01">
+							
+								{{time}} <icon class="dx icon-down"></icon>
+					
+							</picker>
+							
 				</view>
 			</view>
 
@@ -149,11 +155,16 @@
 					cls: ""
 				}, {
 					cls: ""
-				}]
+				}],
+				time:"2018年10月1日",
 			}
 		},
 		components: {},
 		methods: {
+			dateChange(evt){
+				let date_e=evt.detail.value.split("-")
+				this.time = date_e[0]+"年"+date_e[1]+"月"+date_e[2]+"日";
+			},
 			add_xz_e() {
 				this.jiancs.push({
 					cls: ""
