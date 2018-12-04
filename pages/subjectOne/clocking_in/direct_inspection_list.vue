@@ -160,6 +160,6 @@
 	.gouxuan_eet {
 		position: absolute;
 		left: 5upx;
-		top: -15upx;
+		top: -6upx;
 	}
 </style>

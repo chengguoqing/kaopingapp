@@ -21,6 +21,33 @@
 			return {
 				sd_ddf: [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 					{
+						"path": "pages/subjectOne/clocking_in/spot_check_list",
+						"style": {
+							"navigationBarTitleText": "抽检-图表列表"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/clock_out",
+						"style": {
+							"navigationBarTitleText": "下班打卡"
+						}
+					}, {
+						"path": "pages/subjectOne/clocking_in/punch_card",
+						"style": {
+							"navigationBarTitleText": "打卡",
+							"app-plus": {
+								"bounce": "none", //关闭窗口回弹效果
+								"titleNView": {
+									"buttons": [ //原生标题栏按钮配置,
+										{
+											"text": "\ue6ba",
+											"fontSize": "22",
+											"fontSrc": "static/fonts/iconfont.ttf"
+										}
+									]
+								}
+							}
+						}
+					}, {
 						"path": "pages/subjectOne/clocking_in/direct_inspection_list",
 						"style": {
 							"navigationBarTitleText": "直检（10月23日）",
