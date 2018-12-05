@@ -187,13 +187,7 @@
 		background: #67B7F9;
 	}
 
-	.dfg_drrt {
-		height: 250upx;
-	}
 
-	.dfg_drrt.act {
-		height: 800upx !important;
-	}
 
 	.sd_jh_df_drt {
 		height: 13upx;

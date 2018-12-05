@@ -1,12 +1,34 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index",
+					"path": "pages/index",
+					"style": {
+						"navigationBarTitleText": "首页"
+					}
+		
+				},{
+			"path": "pages/subjectOne/pool_section/detail_earnings",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "薪酬池",
+				"app-plus": {
+					"bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "\ue6ba",
+								"fontSize": "22",
+								"fontSrc": "static/fonts/iconfont.ttf"
+							}
+						]
+					}
+				}
 			}
-
 		}, {
+			"path": "pages/subjectOne/landing_card/landing_card_list_er",
+			"style": {
+				"navigationBarTitleText": "落地卡列表二"
+			}
+		},  {
 			"path": "pages/subjectOne/landing_card/landingcard_er",
 			"style": {
 				"navigationBarTitleText": "落地卡二",
@@ -127,7 +149,7 @@
 		}, {
 			"path": "pages/subjectOne/send_bill_me",
 			"style": {
-				"navigationBarTitleText": "发单-开给我的"
+				"navigationBarTitleText": "罚单-开给我的"
 			}
 		}, {
 			"path": "pages/subjectOne/leave_the_chuli",
