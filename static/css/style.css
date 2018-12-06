@@ -201,24 +201,31 @@
 	text-align: center;
 	border: 1px solid #EDEDED;
 }
-.ls_er{
+
+.ls_er {
 	color: #02cc36;
 }
 
-.sd_kh_deert{
-		border: 1px solid #F6F5F4;
-		width: 436upx;
-		height: 200upx;
-		padding: 20upx;
-		font-size: 30upx;
-	}
-	.df_jh_ddfrxe {
-		display: inline-block;
-		padding: 0upx 30upx !important;
-		line-height: 60upx;
-		height: 60upx;
-	}
-	.df_df_dsrtxr {
-	
-			line-height: 60upx;
-		}
+.sd_kh_deert {
+	border: 1px solid #F6F5F4;
+	width: 436upx;
+	height: 200upx;
+	padding: 20upx;
+	font-size: 30upx;
+}
+
+.df_jh_ddfrxe {
+	display: inline-block;
+	padding: 0upx 30upx !important;
+	line-height: 60upx;
+	height: 60upx;
+}
+
+.df_df_dsrtxr {
+
+	line-height: 60upx;
+}
+
+.bk {
+	 box-shadow: 0 0px 4px rgba(0,0,0,.1);
+}

@@ -1,12 +1,69 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-					"path": "pages/index",
-					"style": {
-						"navigationBarTitleText": "首页"
-					}
-		
-				},{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+
+		}, {
+			"path": "pages/subjectOne/employee_statistical_analysis_jiang",
+			"style": {
+				"navigationBarTitleText": "统计分析",
+				"bz": "APP端-科目1-奖罚部分_员工-统计分析-奖"
+			}
+		}, {
+			"path": "pages/subjectOne/employee_statistical_analysis_fa",
+			"style": {
+				"navigationBarTitleText": "统计分析",
+				"bz": "APP端-科目1-奖罚部分_员工-统计分析-罚"
+			}
+		}, {
+			"path": "pages/subjectOne/statistical_analysis_jiang",
+			"style": {
+				"navigationBarTitleText": "统计分析",
+				"bz": "APP端-科目1-奖罚部分_上级-统计分析-奖"
+			}
+		}, {
+			"path": "pages/subjectOne/statistical_analysis_fa",
+			"style": {
+				"navigationBarTitleText": "统计分析",
+				"bz": "APP端-科目1-奖罚部分_上级-统计分析-罚"
+			}
+		}, {
+			"path": "pages/subjectOne/for_single_list",
+			"style": {
+				"navigationBarTitleText": "奖罚",
+				"bz": "员工-奖罚列表"
+			}
+		}, {
+			"path": "pages/subjectOne/for_single",
+			"style": {
+				"navigationBarTitleText": "奖单",
+				"bz": "员工-奖单"
+			}
+		}, {
+			"path": "pages/subjectOne/employee_ticket_appeal",
+			"style": {
+				"navigationBarTitleText": "罚单",
+				"bz": "奖罚部分_员工-罚单申诉"
+			}
+		}, {
+			"path": "pages/subjectOne/view_complaints",
+			"style": {
+				"navigationBarTitleText": "罚单"
+			}
+		}, {
+			"path": "pages/subjectOne/send_bill_me",
+			"style": {
+				"navigationBarTitleText": "罚单-开给我的"
+			}
+		}, {
+			"path": "pages/subjectOne/statistic_analysis",
+			"style": {
+				"navigationBarTitleText": "统计分析"
+			}
+		}, {
 			"path": "pages/subjectOne/pool_section/detail_earnings",
 			"style": {
 				"navigationBarTitleText": "薪酬池",
@@ -28,7 +85,7 @@
 			"style": {
 				"navigationBarTitleText": "落地卡列表二"
 			}
-		},  {
+		}, {
 			"path": "pages/subjectOne/landing_card/landingcard_er",
 			"style": {
 				"navigationBarTitleText": "落地卡二",
@@ -145,11 +202,6 @@
 			"path": "pages/subjectOne/leave_superior",
 			"style": {
 				"navigationBarTitleText": "我开出的-上级"
-			}
-		}, {
-			"path": "pages/subjectOne/send_bill_me",
-			"style": {
-				"navigationBarTitleText": "罚单-开给我的"
 			}
 		}, {
 			"path": "pages/subjectOne/leave_the_chuli",
