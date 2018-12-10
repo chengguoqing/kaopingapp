@@ -7,14 +7,14 @@
 					<icon class="dx icon-check cz df_c_ertx" :class="dsf_s_a?'act':''"></icon>
 				</view>
 			</view>
-			<view class="f_b fz30 z3 cz">
+			<view class="f_b fz32 z3 cz">
 				定内部交易价值链与SST合同(web端)
 			</view>
 		</view>
 
 		<view class="mt20">
 
-			<view class=" pd bgff gfh_jh_dertt dx_row pr"> 
+			<view class=" pd bgff gfh_jh_dertt dx_row pr">
 				<view class="df_df_ertxc f_b cz">
 					<icon class="dx icon-user fz40  z6"></icon>
 				</view>
@@ -37,16 +37,18 @@
 				<view class="right_ert fz26 z6">
 					<!-- <text class="fz26 z6">201年10月1日</text>
 					<icon class="dx icon-right"></icon> -->
-					<picker class="picker-item" mode="date"  @change="dateChange" end="2020-01-01" start="2010-01-01">
-							
-								{{time}} <icon class="dx icon-down"></icon>
-					
-							</picker>
-							
+					<picker class="picker-item" mode="date" @change="dateChange" end="2020-01-01" start="2010-01-01">
+
+						{{time}}
+						<icon class="dx icon-down"></icon>
+
+					</picker>
+
 				</view>
 			</view>
 
 			<view class=" pd bgff  dx_row pr gfh_jh_dertt btm">
+	
 				<view class="df_df_ertxc f_b cz">
 					<icon class="dx icon-icon-- fz40  z6"></icon>
 				</view>
@@ -54,9 +56,19 @@
 					<text class="z6">状态</text>
 				</view>
 				<view class="right_ert">
-					<text class="fz26 z6">进行中</text>
+					<picker class="picker-item " mode="selector" :range="textList" @change="textChange">
+
+					<text class="fz26 z6">{{textList[textValue]}}</text>
 					<icon class="dx icon-right"></icon>
+					</picker>
+
 				</view>
+
+				
+
+			
+
+
 			</view>
 
 
@@ -66,7 +78,7 @@
 				<view class="df_df_ertxc fl cz">
 					<icon class="dx icon-gengduo-2 fz40  z6"></icon>
 				</view>
-				<view class="ov fz30 z3 cz pr dian ln">
+				<view class="ov fz30 z3 cz pr dian ln pl10">
 					<view class="sd_oiu_row mb10" v-for="(sd,idx) in jiancs" @click="gx_sdf(sd)">
 						<view class="dsf_gouxuan cz f_b">
 							<icon class="dx icon-check cz df_c_ertx" :class="sd.cls"></icon>
@@ -81,7 +93,7 @@
 
 
 						<icon class="dx icon-add fz40 ls cz"></icon>
-						<view class="f_b fz30 z3 cz ml10">
+						<view class="f_b fz30 ls cz ml10">
 							点击添加检查项
 						</view>
 					</view>
@@ -126,28 +138,34 @@
 				</view>
 			</view>
 		</view>
-		
-		
-		
+
+
+
 		<view class="pd sdf_dfrtd mt40">
 			<view class="dx_row  yj4 ov bgff">
-				
+
 				<view class="bjhg_sddf fr">
 					评论
 				</view>
 				<view class="ov df_dertxfcrdr pd">
-					<input type="text"  placeholder ="我来说几句"  />
+					<input type="text" placeholder="我来说几句" />
 				</view>
 			</view>
 		</view>
-		
-		
+
+
 	</view>
 </template>
 <script>
 	export default {
 		data() {
 			return {
+				textList: [
+					'进行中',
+					'进行中1',
+					'进行中2'
+				],
+				textValue:0,
 				dsf_s_a: false,
 				jiancs: [{
 					cls: "act"
@@ -156,14 +174,17 @@
 				}, {
 					cls: ""
 				}],
-				time:"2018年10月1日",
+				time: "2018年10月1日",
 			}
 		},
 		components: {},
 		methods: {
-			dateChange(evt){
-				let date_e=evt.detail.value.split("-")
-				this.time = date_e[0]+"年"+date_e[1]+"月"+date_e[2]+"日";
+			textChange(evt) {
+				this.textValue = evt.detail.value;
+			},
+			dateChange(evt) {
+				let date_e = evt.detail.value.split("-")
+				this.time = date_e[0] + "年" + date_e[1] + "月" + date_e[2] + "日";
 			},
 			add_xz_e() {
 				this.jiancs.push({
@@ -184,5 +205,13 @@
 	}
 </script>
 <style scoped>
-	
+	.df_derr_frrtt {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+		background: red;
+	}
 </style>

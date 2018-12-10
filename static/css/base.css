@@ -5,7 +5,7 @@ image {
 }
 
 page{
-	background: #F9F9F9;
+	background: #F5F5F5;
 }
 
 .pl5 {
@@ -386,8 +386,8 @@ html {
 }
 
 .pd {
-	padding-left: 20rpx;
-	padding-right: 20rpx;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
 }
 
 .auo {

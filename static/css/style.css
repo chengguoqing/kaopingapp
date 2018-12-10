@@ -38,7 +38,7 @@
 
 .df_dertxfcrdr input {
 	width: 100%;
-	font-size: 32upx;
+	font-size: 28upx;
 }
 
 .df_dertxfcrdr {
@@ -49,11 +49,15 @@
 }
 
 .bjhg_sddf {
-	width: 160upx;
-	height: 80upx;
-	line-height: 80upx;
+	width: 140upx;
+	height: 60upx;
+	font-size: 28upx;
+	line-height: 60upx;
 	background: #449ef6;
 	text-align: center;
+	position: relative;
+	top: 10upx;
+	right: 10upx;
 	color: #fff;
 }
 

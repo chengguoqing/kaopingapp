@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="bgff">
-			<view class="pt20 pm20 fz32 z3 cen">
+			<view class="dfds_kjj_dert fz32 z3 cen">
 				当前在10月份的复盘阶段
 			</view>
 
@@ -18,7 +18,10 @@
 					</view>
 					<view class="qc pm20"></view>
 				</view>
+			
 				<view class="box_a">
+					
+					
 					<view class="df_jh_deertert pr">
 						<mpvue-echarts :echarts="echarts" :onInit="huanxing" canvasId="pie_er" />
 						<view class="z9 dsf_jjh_eer">
@@ -32,6 +35,12 @@
 				</view>
 			</view>
 
+	<view class="dfds_dsdf_dertx box ls fz50 cen">
+					<view class="box_a ">70</view>
+					<view class="box_a ">60</view>
+	<view class="box_a ">55</view>
+	<view class="box_a ">50</view>
+				</view>
 			<view class="dsf_dfdfrs ">
 				<mpvue-echarts :echarts="echarts" :onInit="pieInit" canvasId="pieon" />
 			</view>
@@ -39,38 +48,38 @@
 
 		</view>
 
-<view class="pd pt20">
-	<view class="bgff yj4 pd pt20 pm20">
-		<view class="fz32 z3">
-			我的评论
-		</view>
-		<view class="dx_row mt20" v-for="sd in 3">
-			<image src="../../static/img/user_icon.png" class="yj user_dertx fl" ></image>
-			<view class="ov pl20 fz30 z6">
-				目标不系统扣1分
+		<view class="pd pt20">
+			<view class="bgff yj4 pd pt20 pm20">
+				<view class="fz32 z3">
+					我的评论
+				</view>
+				<view class="dx_row mt20" v-for="sd in 3">
+					<image src="../../static/img/user_icon.png" class="yj user_dertx fl"></image>
+					<view class="ov pl20 fz30 z6">
+						目标不系统扣1分
+					</view>
+				</view>
 			</view>
 		</view>
-	</view>
-</view>
 
-<view class="pd sdf_dfrtd mt40">
-	<view class="dx_row  yj4 ov bgff">
-		
-		<view class="bjhg_sddf fr">
-			评论
+		<view class="pd sdf_dfrtd mt40">
+			<view class="dx_row  yj4 ov bgff">
+
+				<view class="bjhg_sddf fr">
+					评论
+				</view>
+				<view class="ov df_dertxfcrdr pd">
+					<input type="text" placeholder="我来说几句" />
+				</view>
+			</view>
 		</view>
-		<view class="ov df_dertxfcrdr pd">
-			<input type="text"  placeholder ="我来说几句"  />
-		</view>
-	</view>
-</view>
 
 	</view>
 </template>
 <script>
 	import * as echarts from '../../components/echarts/echarts.simple.min.js';
 	import mpvueEcharts from '../../components/mpvue-echarts/src/echarts.vue';
- 
+
 	function getPieOption() {
 		return {
 			tooltip: {
@@ -79,24 +88,43 @@
 					type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
 				}
 			},
+			textStyle: { //设置字体颜色
+				fontSize: 18,
+				color: '#666'
+			},
 			grid: {
 				left: '3%',
 				right: '4%',
 				bottom: "3%",
 				height: "100%",
-
 				containLabel: true
 			},
 			xAxis: [{
 				type: 'category',
 				data: ['王欢', '李峻秀', '张也', '张世杰'],
+				splitLine: {
+					show: false
+				},
+				axisLine: { //最外面的边框颜色
+					lineStyle: {
+						color: "#ededed"
+					}
+				},
 				axisTick: {
 					alignWithLabel: true
 				}
 
 			}],
 			yAxis: [{
-				type: 'value'
+				type: 'value',
+				splitLine: {
+					show: false
+				},
+				axisLine: { //最外面的边框颜色
+					lineStyle: {
+						color: "#ededed"
+					}
+				},
 
 			}],
 			series: [
@@ -109,18 +137,18 @@
 						}
 					},
 					barGap: '-100%',
-					barWidth: '50%',
+					barWidth: '40%',
 					barCategoryGap: '40%',
 					data: [100, 100, 100, 100],
 					animation: false
 				},
 				{
 					type: 'bar',
-					barWidth: '50%',
-
+					barWidth: '40%',
 					label: {
 						normal: {
-							show: true,
+							 
+							show: false,
 						}
 					},
 					data: [70, 60, 55, 50]
@@ -196,6 +224,10 @@
 	}
 </script>
 <style scoped>
+	.dfds_kjj_dert {
+		line-height: 90upx;
+	}
+
 	.df_jh_deertert {
 		width: 220upx;
 		float: right;
@@ -218,12 +250,16 @@
 		padding-bottom: 20upx;
 
 	}
-	.user_dertx{
+
+	.user_dertx {
 		width: 50upx;
 		height: 50upx;
 	}
-	
-
-
-	
+	.dfds_dsdf_dertx{
+		width: 650upx;
+		margin: auto;
+		height: 50upx;
+		position: relative;
+		left: 20upx;
+	}
 </style>

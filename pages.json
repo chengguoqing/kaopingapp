@@ -299,7 +299,8 @@
 		}, {
 			"path": "pages/subjectTwo/examination_hall",
 			"style": {
-				"navigationBarTitleText": "科举大厅 "
+				"navigationBarTitleText": "科举大厅 ",
+				"bz":"APP端-科目2-考评部分-08"
 			}
 		}, {
 			"path": "pages/subjectThree/purchasing_requisition",
@@ -335,7 +336,8 @@
 		}, {
 			"path": "pages/subjectTwo/plan_details",
 			"style": {
-				"navigationBarTitleText": "计划详情"
+				"navigationBarTitleText": "计划详情",
+				"bz":"APP端-科目2-考评部分-17"
 			}
 		}, {
 			"path": "pages/subjectTwo/keju",
@@ -349,17 +351,20 @@
 		}, {
 			"path": "pages/subjectTwo/finish_planxq",
 			"style": {
-				"navigationBarTitleText": "计划进度完成情况 "
+				"navigationBarTitleText": "计划进度完成情况 ",
+				"bz":"APP端-科目2-考评部分-12"
 			}
 		}, {
 			"path": "pages/subjectTwo/finish_plan",
 			"style": {
-				"navigationBarTitleText": "计划进度完成情况 "
+				"navigationBarTitleText": "计划进度完成情况 ",
+				"bz":"APP端-科目2-考评部分-11"
 			}
 		}, {
 			"path": "pages/subjectTwo/index",
 			"style": {
 				"navigationBarTitleText": "考评主页 ",
+				"bz":"APP端-科目2-考评部分-04",
 				"usingComponents": {
 					"van-row": "/wxcomponents/row/index",
 					"van-col": "/wxcomponents/col/index"
@@ -368,7 +373,8 @@
 		}, {
 			"path": "pages/subjectTwo/my_evaluation",
 			"style": {
-				"navigationBarTitleText": "我的考评情况"
+				"navigationBarTitleText": "我的考评情况",
+				"bz":"APP端-科目2-考评部分-02"
 
 			}
 		}, {

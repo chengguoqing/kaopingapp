@@ -1,5 +1,5 @@
 <template>
-	<view class="pd pt40">
+	<view class="df_df_ddrert pt40">
 
 		<view class="cen">
 
@@ -15,7 +15,7 @@
 
 		</view>
 
-		<view class="mt20">
+		<view class="mt10">
 
 			<van-row gutter="10">
 				<van-col span="12" v-for="(sd,idx) in 4">
@@ -26,12 +26,12 @@
 							<image src="../../static/img/sanjaio.png"></image>
 						</view>
 
-						<image src="../../static/img/user_icon.png" class="yj user_iconser fl mt10"></image>
+						<image src="../../static/img/user_icon.png" class="yj user_iconser fl "></image>
 						<view class="ov pl20">
-							<view class="fz32 z3">
+							<view class="fz28 z3 ">
 								陈献机
 							</view>
-							<view class="fz26 z9 df_dertxfcr mt5">
+							<view class="fz24 z9 df_dertxfcr mt5">
 								软件事业部<br>
 								架构师
 							</view>
@@ -40,17 +40,20 @@
 
 						<view class="dx_row_e">
 							<text class="cz">客户评价</text>
-							<image src="../../static/img/star.png" class="xingxing_e cz mr5" v-for="sd in 5"></image>
+							<image src="../../static/img/star.png" class="xingxing_e cz mr5" v-for="sd in 4"></image>
+							<image src="../../static/img/star_k.png" class="xingxing_e cz mr5" ></image>
 						</view>
 
-						<view class="dx_row_e">
+						<view class="dx_row_e mt10">
 							<text class="cz">平级评价</text>
-							<image src="../../static/img/star.png" class="xingxing_e cz mr5" v-for="sd in 5"></image>
+							<image src="../../static/img/star.png" class="xingxing_e cz mr5" v-for="sd in 4"></image>
+							<image src="../../static/img/star_k.png" class="xingxing_e cz mr5" ></image>
 						</view>
 
-						<view class="dx_row_e ">
+						<view class="dx_row_e mt10">
 							<text class="cz">下级评价</text>
-							<image src="../../static/img/star.png" class="xingxing_e cz mr5" v-for="sd in 5"></image>
+							<image src="../../static/img/star.png" class="xingxing_e cz mr5" v-for="sd in 4"></image>
+							<image src="../../static/img/star_k.png" class="xingxing_e cz mr5" ></image>
 						</view>
 
 
@@ -124,6 +127,10 @@
 	}
 </script>
 <style scoped>
+	.df_df_ddrert{
+		padding-left: 30upx;
+		padding-right: 30upx;
+	}
 	.sdf_deert {
 		width: 36upx;
 		height: 36upx;
@@ -152,7 +159,7 @@
 
 	.dx_row_e {
 		color: #999;
-		font-size: 26upx;
+		font-size: 24upx;
 	}
 
 	.dx_row_e text {
