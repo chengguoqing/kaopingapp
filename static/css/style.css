@@ -128,11 +128,11 @@
 }
 
 .dx_btn {
-	border-radius: 8upx;
+	border-radius: 10upx;
 	background: #489FF7;
 	color: #fff;
-	line-height: 90upx;
-	height: 90upx;
+	line-height: 80upx;
+	height: 80upx;
 	text-align: center;
 	font-size: 32upx;
 }
@@ -207,7 +207,7 @@
 }
 
 .ls_er {
-	color: #02cc36;
+	color: #00aa00;
 }
 
 .sd_kh_deert {
@@ -232,4 +232,11 @@
 
 .bk {
 	 box-shadow: 0 0px 4px rgba(0,0,0,.1);
+}
+	
+.jz{
+	white-space:nowrap; 
+}
+.sdf_dfgxe{
+	border-radius: 4upx !important;
 }

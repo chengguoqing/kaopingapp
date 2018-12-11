@@ -1,24 +1,24 @@
 <template>
 	<view>
 		<view class="sheb_page">
-			<view class="pt20 pm20 pd box">
+			<view class="sd_kjh_dertxcrt pd box">
 				<view class="box_a fz32">
 					成品区
 				</view>
 			</view>
-			<view class="sd_rowsertt mb20" v-for="sd in ['A','B']">
+			<view class="sd_rowsertt " :class="idx==0?'mb20':''" v-for="(sd,idx) in ['A','B']">
 				<view class="pt20 pm10 box bbm bgff pd">
-					<view class="box_b">
+					<view class="box_b fz28">
 						电缆线型号{{sd}}
 					</view>
 					<view class="box_a tr">
-						<icon class="dx icon-gouhao fz50 ls cz"></icon>
+						<icon class="dx icon-gouhao fz50 ls_er cz"></icon>
 
 					</view>
 				</view>
 
 
-				<view class="dx_row bgff  bgff pd pt10">
+				<view class="dx_row bgff  bgff pd pt20">
 					<view class="dx_col_12">
 						<view class="dx_row pt10 pm10 fz30">
 							<view class="sddsff  z6">
@@ -63,7 +63,7 @@
 					应结余:1件
 					<view class="f_b ml20">
 						实际结余:
-						<input type="number" value="1" class="dsf_ddertx f_b" /> 件
+						<input type="number" value="1" class="dsf_ddertx f_b cz" /> 件
 					</view>
 				</view>
 			</view>
@@ -71,7 +71,7 @@
 
 
 
-			<view class=" fz32 pd pm20">
+			<view class=" fz32 pd sd_kjh_dertxcrt">
 				异常汇总
 			</view>
 			<view class="btm pd bgff" v-for="sd in 2">
@@ -155,5 +155,7 @@
 	}
 </script>
 <style scoped>
-	
+	.sd_kjh_dertxcrt{
+		line-height: 90upx;
+	}
 </style>

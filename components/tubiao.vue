@@ -15,7 +15,7 @@
 
 	export default {
 		props: {
-			canvasId:"",
+			canvasId: "",
 			date_d: "",
 			tet_m: ""
 		},
@@ -30,12 +30,12 @@
 		},
 		methods: {
 			getPieOption(date_d, tet_m) {
-				let sd_dsdf=[]
-				date_d.map(a=>{
+				let sd_dsdf = []
+				date_d.map(a => {
 					sd_dsdf.push(10)
 				})
 				return {
-				
+
 
 
 					tooltip: {
@@ -44,12 +44,15 @@
 							type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
 						}
 					},
+					textStyle: { //设置字体颜色
+						fontSize: 12,
+						color: '#666'
+					},
 					grid: {
 						left: '3%',
 						right: '4%',
 						bottom: "3%",
-						height: "100%",
-
+						height: "90%",
 						containLabel: true
 					},
 					xAxis: [{
@@ -57,11 +60,35 @@
 						data: tet_m,
 						axisTick: {
 							alignWithLabel: true
+						},
+						
+
+						axisLine: { //最外面的边框颜色
+							lineStyle: {
+								
+								color: "#ededed"
+							}
+						},
+						splitLine: { //间隔线
+							lineStyle: {
+								color: "#ededed" //间隔线的颜色
+							}
 						}
 
 					}],
 					yAxis: [{
 						type: 'value',
+						show: false, 
+						axisLine: { //最外面的边框颜色
+							lineStyle: {
+								color: "#ededed"
+							}
+						},
+						splitLine: { //间隔线
+							lineStyle: {
+								color: "#ededed" //间隔线的颜色
+							}
+						}
 
 
 					}],
@@ -71,28 +98,29 @@
 							type: 'bar',
 							itemStyle: {
 								normal: {
-									color: 'rgba(0,0,0,0.05)'
+									color: 'rgba(0,0,0,0.0)'
 								}
 							},
 							barGap: '-100%',
-							barWidth: '50%',
+							barWidth: '45%',
 							barCategoryGap: '40%',
 							data: sd_dsdf,
 							animation: false
 						},
 						{
 							type: 'bar',
-							barWidth: '50%',
-
+							barWidth: '45%',
+							
 							label: {
 								normal: {
 									show: true,
+									 position: ['45%',-15]
 								}
 							},
 							data: date_d
 						}
 					],
-					color: ["#6BB5F2"]
+					color: ["#449EF4"]
 
 				}
 			}

@@ -3,11 +3,8 @@
 
 		<view class="pd pt40 bgff">
 			<view class="yj4 dsf_hg_der dx_row ov">
-				<view class="dx_col_12 df_sd_dert act">
-					成品
-				</view>
-				<view class="dx_col_12 df_sd_dert">
-					原材料
+				<view class="dx_col_12 df_sd_dert " :class="sd.cls" v-for="sd in sd_sdfg" @click="hgfdfdf(sd)">
+					{{sd.name}}
 				</view>
 
 			</view>
@@ -32,13 +29,13 @@
 		<view class="sd_page">
 
 
-			<view class="bgff">
+			<view class="bgff fz28">
 				<view class="pt20 pm10 box btm bgff pd">
 					<view class="box_b">
 						电缆线型号A
 					</view>
 					<view class="box_a tr">
-						<icon class="dx icon-gouhao fz50 ls cz"></icon>
+						<icon class="dx icon-gouhao fz50 ls_er cz"></icon>
 					</view>
 				</view>
 				<view class="pt20 pm20 box btm bgff pd">
@@ -51,7 +48,7 @@
 				</view>
 				<view class="pt20 pm20 box btm bgff pd">
 					<view class="box_a">
-						直检结余 	 <input type="number" value="1" class="dsf_ddertx f_b" v-if="!is_dfg"/>
+						直检结余 	 <input type="number" value="1" class="dsf_ddertx f_b cz" v-if="!is_dfg"/>
 						 <text v-else>1</text> 件
 					</view>
 				</view>
@@ -75,7 +72,7 @@
 				<view class="pt20 pm20 box btm bgff pd">
 					<view class="box_a">
 						直检结余
-						 <input type="number" value="1" class="dsf_ddertx f_b" v-if="!is_dfg"/>
+						 <input type="number" value="1" class="dsf_ddertx f_b cz" v-if="!is_dfg"/>
 						 <text v-else>1</text>
 						 件
 					</view>
@@ -112,7 +109,7 @@
 				检查
 			</view>
 			
-			<view class="pt20 pm20 btm pd dx_row">
+			<view class="pt20 pm20 btm pd dx_row fz28">
 				<view class="dx_col_6">
 					质检人
 				</view>
@@ -129,7 +126,7 @@
 				
 			</view>
 			
-			<view class="pt20 pm20 btm pd dx_row">
+			<view class="pt20 pm20 btm pd dx_row fz28">
 				<view class="dx_col_6">
 					盘点负责人
 				</view>
@@ -175,17 +172,37 @@
 				}, {
 					cls: "",
 					name: "废品区"
-				}]
+				}],
+				sd_sdfg:[
+					{
+						name:"成品",
+						cls:"act"
+					},
+					{
+						name:"原材料",
+						cls:""
+					}
+				]
 			}
 		},
 		components: {
 			tab_qh
 		},
-		methods: {},
+		methods: {
+			hgfdfdf(sd){
+				this.sd_sdfg.map(a=>{
+					a.cls=""
+				})
+				sd.cls="act"
+			}
+		},
 		mounted() {},
 	}
 </script>
 <style scoped>
+	.red{
+		color: #FF5517 !important;
+	}
 	.dx_btn.act{
 		background: #CCCCCC;
 	}

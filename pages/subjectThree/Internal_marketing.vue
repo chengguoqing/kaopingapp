@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<tab_qh :sd_dfg="sd_dfg"></tab_qh>
-
+ 
 		<view class="sdf_jh_der pd">
 
 			<view class="yj4 bgff mt20" v-for="(sd,idx) in 10">
@@ -9,7 +9,7 @@
 					<view class="dx_col_20 fz26 z6">
 						订单编号: <text>20181009623245896</text>
 					</view>
-					<view class="dx_col_4 ls fz26 ">
+					<view class="dx_col_4 ls_er fz26 ">
 						交易成功
 					</view>
 				</view>
@@ -18,7 +18,7 @@
 					<image src="https://duxinggj-2018-1251133427.cos.ap-guangzhou.myqcloud.com/upload_ef46110abaeaa912e2d1d2f0cd0dd641.jpg"
 					 class="femh_dert fl"></image>
 					<view class="ov pl20 box">
-						<view class="box_b fz30 ln z6">
+						<view class="box_b fz26 sd_eer_ERTXER z6">
 							<text class="z3">电缆线原材料</text><br>
 							<text>商品编号:sp1001</text><br>
 							<text>规格:50*40</text>
@@ -31,7 +31,7 @@
 				</view>
 
 				<view class="btm pt20 pd tr fz28">
-					共2件商品 <text class="ml10">合计:</text> <text class="fz32">300.00</text>
+					共2件商品 <text class="ml10">合计：</text> <text class="fz32">300.00</text>
 					<view class="mt10 pm20 ">
 						<view class="sd_hhg_der">
 							再来一单
@@ -80,6 +80,9 @@
 	.sdf_jh_der {
 		padding-top: 100upx;
 	}
+	.sd_eer_ERTXER{
+		line-height: 45upx;
+	}
 
 	.femh_dert {
 		width: 125upx;
@@ -94,7 +97,7 @@
 		border-radius: 30upx;
 		border: 1px solid #B3B3B3;
 		color: #B3B3B3;
-		font-size: 30upx;
+		font-size: 28upx;
 		display: inline-block;
 	}
 	.sd_hhg_der.ab{

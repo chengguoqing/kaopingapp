@@ -264,35 +264,43 @@
 		}, {
 			"path": "pages/subjectThree/goods_inventory_er",
 			"style": {
-				"navigationBarTitleText": "物品盘点"
+				"navigationBarTitleText": "物品盘点",
+				"bz":"APP-科目三_物品盘点-直检 副本 2"
 			}
 		}, {
 			"path": "pages/subjectThree/goods_inventory",
 			"style": {
-				"navigationBarTitleText": "物品盘点"
-
+				"navigationBarTitleText": "物品盘点",
+				"bz":"APP-科目三_物品盘点-第一步"
+				
 			}
 		}, {
 			"path": "pages/subjectThree/equipment_inventory",
 			"style": {
-				"navigationBarTitleText": "设备盘点"
+				"navigationBarTitleText": "设备盘点(8月25)",
+				"bz":"APP-科目三_盘点清单列表"
 
 			}
 		}, {
 			"path": "pages/subjectThree/Internal_marketing",
 			"style": {
-				"navigationBarTitleText": "内部购销列表"
+				"navigationBarTitleText": "内部购销列表",
+				"bz":"APP-科目三_内部购销列表"
 
 			}
 		}, {
 			"path": "pages/subjectThree/yield",
 			"style": {
+				"bz":"APP-科目三_产量详情-本周",
+
 				"navigationBarTitleText": "产量-本周"
 
 			}
 		}, {
 			"path": "pages/subjectThree/yield_er",
 			"style": {
+				"bz":"APP-科目三_产量详情-本月",
+
 				"navigationBarTitleText": "产量-本月"
 
 			}
@@ -306,6 +314,7 @@
 			"path": "pages/subjectThree/purchasing_requisition",
 			"style": {
 				"navigationBarTitleText": "采购申请",
+				"bz":"APP-科目三_采购清单-新增采购清单",
 				"usingComponents": {
 					"van-field": "/wxcomponents/field/index",
 					"van-cell": "/wxcomponents/cell/index",
@@ -325,6 +334,7 @@
 			"path": "pages/subjectThree/index",
 			"style": {
 				"navigationBarTitleText": "首页",
+				"bz":"APP-科目三_App端工作台",
 				"usingComponents": {
 					"van-notice-bar": "/wxcomponents/notice-bar/index",
 					"van-toast": "/wxcomponents/toast/index",
@@ -380,6 +390,7 @@
 		}, {
 			"path": "pages/subjectThree/sxy",
 			"style": {
+			
 				"navigationBarTitleText": "产量-本周"
 
 			}

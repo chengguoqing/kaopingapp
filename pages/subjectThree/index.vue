@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<van-notice-bar left-icon="https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" />
+		<van-notice-bar class="fz28" left-icon="https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" />
 
 		<view class="swiper_xdfg ">
 			<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration" circular="true"
@@ -16,11 +16,11 @@
 		<view class="bgff">
 
 
-			<view class="pd pt20 pm20">
+			<view class="pd pt30 pm20">
 				<view class="fz26 z9">
 					本月合附加值
 				</view>
-				<view class="fz40 ls mt10">
+				<view class="fz50 ls mt10">
 					1438.00
 				</view>
 			</view>
@@ -56,7 +56,10 @@
 							合附加价值同比
 						</view>
 						<view class="fz26 z9">
-							+300
+							+300 <view class="fz26 f_b sdf_kj_deert cz ml20 ln">
+								<image src="../../static/img/up.png" class="cz"></image> 
+								<text class="cz">3%</text>
+							</view>
 						</view>
 					</view>
 
@@ -71,6 +74,10 @@
 						</view>
 						<view class="fz26 z9">
 							562.00
+							<view class="fz26 f_b sdf_kj_deert cz ml20 ln">
+								<image src="../../static/img/up.png" class="cz"></image> 
+								<text class="cz">3%</text>
+							</view>
 						</view>
 					</view>
 
@@ -88,7 +95,7 @@
 
 
 						<image :src="sd.img" class="sd_derttxc"></image>
-						<view class="fz30 ">
+						<view class="fz26 ">
 							{{sd.name}}
 						</view>
 					</view>
@@ -151,6 +158,14 @@
 </script>
 
 <style scoped>
+	.sdf_kj_deert{
+		color:#02B66E ;
+	}
+	.sdf_kj_deert image{
+		width: 35upx;
+		height: 35upx;
+		position: relative;
+	}
 	.swiper_xdfg image {
 		width: 100%;
 		height: 100%;

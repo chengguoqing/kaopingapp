@@ -2,7 +2,7 @@
 <template>
 	<view class="box cen dsf_ddrertxc bbm" :class="is_sdf==1?'act':''">
 		<view class="box_a df_fd_sdrert" :class="sd.cls" v-for="sd in sd_dfg" @click="sd_sddf(sd)">
-			<text class="pd fz32 z6">{{sd.name}}</text>
+			<text class="pd fz28 z9">{{sd.name}}</text>
 		</view>
 	</view>
 </template>
