@@ -3,9 +3,9 @@
 		<view class="pd pt20 pm20 fz28 z3 bgff bbm">
 			所属部门：软件事业部
 		</view>
-		<rili></rili>
+		<rili_gx></rili_gx>
 		<view class="bgff btm pt20 fz28 z3 pm20 pd">
-			选定日期：  2018年8月23日
+			选定日期：  2018年8月25日
 		</view>
 		
 		<view class="mt100 dx_row pd ">
@@ -20,13 +20,13 @@
 	</view>
 </template>
 <script>
-	import rili from "@/components/rili.vue"
+	import rili_gx from "@/components/rili_gx.vue"
 	export default {
 		data() {
 			return {}
 		},
 		components: {
-			rili
+			rili_gx
 		},
 		methods: {},
 		mounted() {},

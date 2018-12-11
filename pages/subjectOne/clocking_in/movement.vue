@@ -3,7 +3,7 @@
 	<view class="pm50">
 
 		<view class="pr dfg_drrt" :class="iy_sdf">
-			<rili :is_ddf="is_ddf" @sddffff="sddffff"></rili>
+			<rili :is_ddf="is_ddf" @sddffff="sddffff" is_down="act" is_hd="act"></rili>
 
 		</view>
 
@@ -108,7 +108,7 @@
 		color: #fff;
 		position: absolute;
 		left: 16upx;
-		top: 5upx;
-		font-size: 26;
+		top: 10upx;
+		font-size: 24upx;
 	}
 </style>

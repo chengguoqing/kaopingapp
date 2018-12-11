@@ -7,8 +7,8 @@
 		<view class="pd pt40 bgff pm40">
 
 			<view class="sd_df_dft fz30" v-for="(sd,idx ) in timu">
-				<text class="fz26 dsf_df_dsr">单选题</text>
-				<text class="fz32 ml10 z3 ln">{{sd.title}}</text>
+				<text class="fz24 dsf_df_dsr">单选题</text>
+				<text class="fz28 ml10 z3 ln">{{sd.title}}</text>
 				({{xz_sd}})
 				<view class="pt10">
 
@@ -39,7 +39,7 @@
 
 		<van-popup :show="show" position="bottom" :close="onClose" :close-on-click-overlay="is_gnsd">
 			<view class="pt20 dx_row">
-				<view class="dx_col_4 cen mb20" v-for="sd in sd_mud" @click="dsdf_sddf(sd)">
+				<view class="dx_col_4 cen mb20 sdf_deerttxrt" :class="sd.clb" v-for="sd in sd_mud" @click="dsdf_sddf(sd)">
 					<text class="ddf_dfggc" :class="sd.cls">{{sd.num}}</text>
 				</view>
 			</view>
@@ -56,33 +56,40 @@
 				sd_mud:[
 					{
 						num:1,
+						clb:"acb",
 						cls:""
 					},{
 						num:2,
 						cls:"act"
 					},{
 						num:3,
+						clb:"acb",
 						cls:""
 					},{
 						num:4,
+						clb:"acb",
 						cls:""
 					},{
 						num:5,
+						clb:"acb",
 						cls:""
 					},{
 						num:6,
 						cls:""
 					},{
 						num:7,
+						clb:"acb",
 						cls:""
 					},{
 						num:8,
+						clb:"acb",
 						cls:""
 					},{
 						num:9,
 						cls:""
 					},{
 						num:10,
+						clb:"acb",
 						cls:""
 					}
 				],
@@ -180,8 +187,12 @@
 		border-radius: 50%;
 		display: inline-block;
 	}
+
+	.sdf_deerttxrt.acb .ddf_dfggc{
+		background: #E5F1F9;
+	}
 	.ddf_dfggc.act{
-		background: #459cf3;
+		background: #459cf3 !important;
 		color: #fff;
 	}
 </style>

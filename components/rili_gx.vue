@@ -1,3 +1,4 @@
+<!-- 公休 -->
 <template>
 	<view class="pm20">
 
@@ -32,7 +33,7 @@
 
 					<text class="yj sdf_jh_drtx " :class="day.isjintian">{{day.riqi}}</text>
 
-					<text class="dian_drtxc" v-if="day.is_dian%3==0&&!is_hd"></text>
+					<text class="dian_drtxc ls fz22" v-if="day.is_dian%3==0">公休</text>
 
 				</view>
 			</view>
@@ -66,8 +67,7 @@
 	export default {
 		props: {
 			is_ddf: "",
-			is_down:"",
-			is_hd:""
+			is_down:""
 		},
 		data() {
 			return {
@@ -345,7 +345,7 @@
 		width: 13.6%;
 		float: left;
 		text-align: center;
-		height: 80upx;
+		height: 90upx;
 	}
 
 	.sdf_jh_drtx {
@@ -364,12 +364,7 @@
 
 	.dian_drtxc {
 		display: block;
-		width: 10upx;
-		height: 10upx;
-		background: #FF4900;
-		border-radius: 50%;
 		margin: auto;
-		margin-top: 6upx;
 	}
 
 	.f_b {

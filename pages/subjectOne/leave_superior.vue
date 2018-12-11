@@ -6,7 +6,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					被罚人：
 				</view>
-				<view class="ov df_df_dsrtxr">
+				<view class="ov df_df_dsrtxr z6 ">
 					管玉华 JAVA开发
 				</view>
 			</view>
@@ -16,7 +16,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					金额：
 				</view>
-				<view class="ov df_df_dsrtxr">
+				<view class="ov df_df_dsrtxr z6">
 					10元
 
 				</view>
@@ -27,7 +27,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					事由：
 				</view>
-				<view class="ov pr20 df_df_dsrtxr">
+				<view class="ov pr20 df_df_dsrtxr z6">
 					上班瞌睡
 
 				</view>
@@ -92,7 +92,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					理由：
 				</view>
-				<view class="ov df_df_dsrtxr">
+				<view class="ov df_df_dsrtxr z6">
 					昨晚宿舍员工太吵
 
 
@@ -104,7 +104,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					证据：
 				</view>
-				<view class="ov df_df_dsrtxr ls">
+				<view class="ov df_df_dsrtxr z6 ls">
 					附件1 附件2 附件3
 				</view>
 			</view>
@@ -125,7 +125,7 @@
 				</view>
 			</view>
 			
-			<view class="dx_row mt80 pl40 pr40 pm100">
+			<view class="dx_row mt80 pl40 pr40 pm100 dfsgg_cderrtty">
 					<view class="dx_col_12 pr20">
 						<view class="dx_btn">
 							拒绝
@@ -195,6 +195,9 @@
 	}
 </script>
 <style scoped>
+	.dfsgg_cderrtty .dx_btn{
+		border-radius: 80upx;
+	}
 	.df_jh_ddfrxe {
 		display: inline-block;
 		padding: 0upx 30upx !important;

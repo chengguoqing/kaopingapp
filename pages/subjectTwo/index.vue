@@ -5,7 +5,8 @@
 
 			<image src="../../static/img/left.png" class="sdf_deert mr40 cz"></image>
 
-			<view class="cz f_b"><picker class="picker-item" mode="date"  @change="dateChange" end="2020-01-01" start="2010-01-01">
+			<view class="cz f_b">
+				<picker class="picker-item" mode="date"  @change="dateChange" end="2020-01-01" start="2010-01-01">
 					        
 								 {{time}} 
 					

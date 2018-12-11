@@ -29,8 +29,8 @@
 			</view>
 			<view class="pd pt20 pm20 bgff yj4 mb20" v-for="sd in 10">
 				<image src="../../static/img/user_icon.png" class="yj user_iu_der fl"></image>
-				<view class="ov pl20">
-					<view class="fz32">
+				<view class="ov pl20 ln pt5">
+					<view class="fz28">
 						独行工匠 <text class="fz30 fr">10000</text>
 						<view class="qc fz28 z9 pt10">
 							开发架构师

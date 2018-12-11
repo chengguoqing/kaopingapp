@@ -29,16 +29,18 @@
 		<view class="pd">
 			
 			
-			<view class="yj4 bgff ov mt20">
-				<view class="box pt20 pm10 bgls pd">
+			<view class="yj4 bgff ov mt20" v-for="sd in sd_xddf">
+				<view class="box pt20 pm10  pd" :class="sd.name" @click="sd.cls?sd.cls='':sd.cls='act'">
 					<view class="box_b fz32">
 						海口分公司  <text class="ml10">15000</text>
 					</view>
 					<view class="box_a tr">
-						<icon class="dx icon-up1"></icon>
+						<icon class="dx icon-up1" :class="sd.cls?'dsfe_dfrtertggtty':''"></icon>
 					</view>
 				</view>
-				
+				<view class="" v-if="sd.cls">
+					
+			
 				<view class="pd pt20 pm20 box fz30 btm">
 					<view class="box_b  z6">
 						软件事业部
@@ -57,80 +59,19 @@
 					</view>
 				</view>
 				
-				
+				</view>
+
 				
 			</view>
 			
 			
 			
-			
-			<view class="yj4 bgff ov mt20">
-				<view class="box pt20 pm10 sd_r_dert pd">
-					<view class="box_b fz32">
-						郑州分公司  <text class="ml10">15000</text>
-					</view>
-					<view class="box_a tr">
-						<icon class="dx icon-up1"></icon>
-					</view>
-				</view>
-				
-				<view class="pd pt20 pm20 box fz30 btm">
-					<view class="box_b  z6">
-						软件事业部
-					</view>
-					<view class="box_a  ls tr">
-						100000
-					</view>
-				</view>
-				
-				<view class="pd pt20 pm20 box fz30 btm">
-					<view class="box_b  z6">
-						咨询事业部
-					</view>
-					<view class="box_a  ls tr">
-						100000
-					</view>
-				</view>
-				
-				
-				
-			</view>
+		
 			
 			
 			
 			
 			
-			<view class="yj4 bgff ov mt20">
-				<view class="box pt20 pm10 bgls pd">
-					<view class="box_b fz32">
-						海口分公司  <text class="ml10">15000</text>
-					</view>
-					<view class="box_a tr">
-						<icon class="dx icon-up1"></icon>
-					</view>
-				</view>
-				
-				<view class="pd pt20 pm20 box fz30 btm">
-					<view class="box_b  z6">
-						软件事业部
-					</view>
-					<view class="box_a  ls tr">
-						100000
-					</view>
-				</view>
-				
-				<view class="pd pt20 pm20 box fz30 btm">
-					<view class="box_b  z6">
-						咨询事业部
-					</view>
-					<view class="box_a  ls tr">
-						100000
-					</view>
-				</view>
-				
-				
-				
-			</view>
 			
 			
 			
@@ -148,7 +89,21 @@
 		data() {
 			return {
 				time:"2018年10月",
-				date_d:[1,2,3,4,5,6]
+				date_d:[1,2,3,4,5,6],
+				sd_xddf:[
+					{
+						cls:"act",
+						name:"bglscf"
+					},
+					{
+						cls:"act",
+						name:"sd_r_dert"
+					},
+					{
+						cls:"act",
+						name:"bglscf"
+					}
+				]
 			}
 		},
 		components: {
@@ -164,6 +119,9 @@
 	}
 </script>
 <style scoped>
+	.dsfe_dfrtertggtty{
+		transform: rotate(180deg);
+	}
 	.ssd_dffgxc{
 		width: 310upx;
 		height: 65upx;

@@ -2,74 +2,74 @@
 <template>
 	<view class="pt20">
 		<view class="pd bgff">
-			<view class="pt20 pm20 fz32 z3">
+			<view class="pt30 pm20 fz32 z3">
 				基本信息
 			</view>
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					收入类型
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28 ">
 					对外经营收入
 				</view>
 			</view>
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					姓名
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					豆豆
 				</view>
 			</view>
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					手机号码
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					15296584565
 				</view>
 			</view>
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					经手人
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					豆豆
 				</view>
 			</view>
 
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					所属合名
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					豆豆
 				</view>
 			</view>
 
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					购买人
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					豆豆
 				</view>
 			</view>
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					购买人电话
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					15296584565
 				</view>
 			</view>
@@ -81,72 +81,72 @@
 		</view>
 
 
-		<view class="pd bgff mt20">
+		<view class="pd bgff mt20" v-for="(sd,idx) in sd_kh_df">
 			<view class="pt20 pm20 fz32 z3">
-				销售清单
+				销售清单{{idx+1}}
 			</view>
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					商品名称
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					电缆线材料
 				</view>
 			</view>
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					购买方
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					杨XX
 				</view>
 			</view>
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					联系方式
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					152xxxx6543
 				</view>
 			</view>
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					商品单价
 				</view>
-				<view class="ov  z3">
-					<input type="number" value="100" class="dsf_ddertx ab f_b">
+				<view class="ov z3 fz28 pl10">
+					<input type="number" value="100" class="dsf_ddertx ab f_b cz">
 				</view>
 			</view>
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					数量
 				</view>
-				<view class="ov  z3">
-					<input type="number" value="2" class="dsf_ddertx f_b "> 件
+				<view class="ov z3 fz28 pl10">
+					<input type="number" value="2" class="dsf_ddertx f_b cz"> 件
 				</view>
 			</view>
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					销售地点
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					广东省广州
 				</view>
 			</view>
 
 
-			<view class="dx_row pt10 pm10 fz30">
+			<view class="dx_row dfsd_ddererrtt fz30">
 				<view class="sddsff  z6">
 					总价格
 				</view>
-				<view class="ov  z3">
+				<view class="ov z3 fz28">
 					200元
 				</view>
 			</view>
@@ -156,8 +156,8 @@
 		</view>
 
 
-		<view class="cen pt20 pm20 bgff ls fz32 mt20">
-			+ 添加商品
+		<view class="cen pt10 pm10 bgff ls fz32 mt20" @click="sd_kh_df++">
+			<text class="fz50">+</text> 添加商品
 		</view>
 
 
@@ -191,7 +191,7 @@
 				反腐审计异常
 			</view>
 
-			<view class="pt20 pm20 pd bbm box fz32">
+			<view class="pt20 pm20 pd bbm box fz30">
 				<view class="box_b">
 					反腐金额
 				</view>
@@ -200,9 +200,9 @@
 				</view>
 			</view>
 			
-			<view class="pt20 pm20 pd bbm ln fz32">
+			<view class="pt20 pm20 pd bbm ln fz30">
 				反腐备注
-				<view class="z6 fz30">
+				<view class="z6 fz26">
 					销售材料时低价高卖，赚钱回扣
 				</view>
 			</view>
@@ -239,7 +239,9 @@
 <script>
 	export default {
 		data() {
-			return {}
+			return {
+				sd_kh_df:1
+			}
 		},
 		components: {},
 		methods: {},
@@ -249,5 +251,8 @@
 <style scoped>
 	.dsf_ddertx.ab {
 		width: 180upx;
+	}
+	.dfsd_ddererrtt{
+		line-height: 70upx;
 	}
 </style>

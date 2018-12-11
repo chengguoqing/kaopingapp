@@ -13,7 +13,7 @@
 				</view>
 			</view>
 
-			<view class="mt30 box ln cen">
+			<view class="mt40 box ln cen">
 				<view class="box_a">
 					<view class="fz46 ls">
 						9分
@@ -107,7 +107,7 @@
 
 		</view>
 
-		<view class="mt20 pt20 pm20 bgff pd">
+		<view class="mt20 pt30 pm30 bgff pd">
 			<view class="fz32 z3">
 				个人能力分布状况
 			</view>
@@ -266,6 +266,9 @@
 	}
 </script>
 <style scoped>
+	.gfd_eeertxc{
+		line-height: 1.3;
+	}
 	.user_df {
 		width: 114upx;
 		height: 114upx;
@@ -276,8 +279,8 @@
 	}
 
 	.sh_dfd_dre {
-		width: 320upx;
-		height: 320upx;
+		width: 360upx;
+		height: 360upx;
 	}
 
 	.sd_jhg_dr {

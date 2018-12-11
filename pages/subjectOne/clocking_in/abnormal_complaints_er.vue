@@ -1,7 +1,7 @@
 <!-- 异常申诉 -->
 <template>
 	<view class="pm50">
-		<rili :is_ddf="is_ddf"></rili>
+	<rili :is_ddf="is_ddf" is_down="act"></rili>
 		
 		<view class="btm pd pt20  bgff">
 			<view class=" pt10 pm10 ln" >
@@ -17,7 +17,7 @@
 		
 		
 		
-			<view class="bgff mt20  pt20">
+			<view class="bgff pt20  pt20">
 		
 		
 					

@@ -8,8 +8,11 @@
 				</view>
 				<view class="ov">
 					<view class="df_jh_ddfrxe br">
-						<text class="cz">管玉华 JAVA开发</text>
-						<icon class="dx icon-down cz"></icon>
+						<picker class="picker-item" mode="selector" :range="textList">
+
+							<text class="cz z6">管玉华 JAVA开发</text>
+							<icon class="dx icon-down cz"></icon>
+						</picker>
 					</view>
 				</view>
 			</view>
@@ -31,7 +34,7 @@
 					事由：
 				</view>
 				<view class="ov pr20">
-					<input type="text" value=" 上班瞌睡" class="df_jh_ddfrxe br ac" />
+					<input type="text" value=" 上班瞌睡" class="df_jh_ddfrxe br ac z6" />
 
 				</view>
 			</view>
@@ -42,8 +45,8 @@
 				</view>
 				<view class="ov pr20">
 					<image src="../../static/img/bg_sdf.jpg" class="zhengju_der mr10 cz" v-for="sd in 3"></image>
-					<view class="f_b sd_ddr br cz">
-						<icon class="dx icon-add cz z6"></icon>
+					<view class="f_b sd_ddr br cz" @click="xztu">
+						<image src="../../static/img/add_icon.png"></image>
 					</view>
 
 				</view>
@@ -81,6 +84,11 @@
 	export default {
 		data() {
 			return {
+				textList: [
+					'text1',
+					'text2',
+					'text3'
+				],
 				sd_sdf: [{
 						cls: "",
 						href: "/pages/subjectOne/send_bill_me",
@@ -103,6 +111,16 @@
 		},
 		components: {},
 		methods: {
+			xztu() {
+				uni.chooseImage({
+					count: 6, //默认9
+					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+					sourceType: ['album'], //从相册选择
+					success: function(res) {
+						console.log(JSON.stringify(res.tempFilePaths));
+					}
+				});
+			},
 			xzdfd(sd) {
 				this.sd_sdf.map(a => {
 					a.cls = ""
@@ -147,9 +165,12 @@
 	}
 
 	.sd_ddr {
-		text-align: center;
-		line-height: 40upx;
-		font-size: 40upx;
+		width: 60upx;
+	}
+
+	.sd_ddr image {
+		width: 100%;
+		height: 100%;
 	}
 
 	.df_jh_drrtxrt {

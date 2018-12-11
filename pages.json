@@ -176,22 +176,26 @@
 		}, {
 			"path": "pages/subjectOne/clocking_in/movement",
 			"style": {
-				"navigationBarTitleText": "行动轨迹分布图"
+				"navigationBarTitleText": "行动轨迹分布图",
+				"bz":"APP-科目1-考勤部分_员工视角-行动轨迹"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/department_holidays",
 			"style": {
-				"navigationBarTitleText": "设置部门公休日"
+				"navigationBarTitleText": "设置部门公休日",
+				"bz":"APP-科目1-考勤部分_直接上级-设置部门公休日"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/abnormal_complaints_er",
 			"style": {
-				"navigationBarTitleText": "异常申诉二"
+				"navigationBarTitleText": "异常申诉二",
+				"bz":"APP-科目1-考勤部分_直接上级-打卡异常申诉"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/abnormal_complaints",
 			"style": {
-				"navigationBarTitleText": "异常申诉"
+				"navigationBarTitleText": "异常申诉",
+				"bz":"APP-科目1-考勤部分_员工视角-打卡异常申诉"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/direct_inspection",
@@ -206,25 +210,29 @@
 		}, {
 			"path": "pages/subjectOne/leave_the_chuli",
 			"style": {
-				"navigationBarTitleText": "我开出的-处理"
+				"navigationBarTitleText": "我开出的-处理",
+				"bz":"APP端-科目1-奖罚部分_上级-开罚单"
 			}
 		}, {
 			"path": "pages/subjectOne/leave_the",
 			"style": {
 				"navigationBarTitleText": "我开出的"
+				
 			}
 		}, {
 			"path": "pages/subjectOne/details_test_er",
 			"style": {
 				"navigationBarTitleText": "考试详情",
 				"usingComponents": {
+					"bz":"APP端-科目1-考试部分_会场客户-考试详情-选题-22",
 					"van-popup": "/wxcomponents/popup/index"
 				}
 			}
 		}, {
 			"path": "pages/subjectOne/record_details",
 			"style": {
-				"navigationBarTitleText": "成绩详情"
+				"navigationBarTitleText": "成绩详情",
+				"bz":"APP端-科目1-考试部分_会场客户-成绩详情"
 			}
 		}, {
 			"path": "pages/subjectOne/details_test",
@@ -234,31 +242,37 @@
 		}, {
 			"path": "pages/subjectOne/attendance_details",
 			"style": {
-				"navigationBarTitleText": "考勤详情"
+				"navigationBarTitleText": "考勤详情",
+				"bz":"APP端-科目1-工资部分_员工-考勤扣除"
 			}
 		}, {
 			"path": "pages/subjectOne/behavioral_details",
 			"style": {
-				"navigationBarTitleText": "行为详情"
+				"navigationBarTitleText": "行为详情",
+				"bz":"APP端-科目1-工资部分_员工-行为扣除"
 			}
 		}, {
 			"path": "pages/subjectOne/labor_summary_er",
 			"style": {
-				"navigationBarTitleText": "人工费用汇总"
+				"navigationBarTitleText": "人工费用汇总",
+				"bz":"APP端-科目1-工资部分_上级-人工费用汇总2"
 			}
 		}, {
 			"path": "pages/subjectOne/labor_summary",
 			"style": {
-				"navigationBarTitleText": "人工费用汇总"
+				"navigationBarTitleText": "人工费用汇总",
+				"bz":"APP端-科目1-工资部分_上级-人工费用汇总"
 			}
 		}, {
 			"path": "pages/subjectOne/my_pay_slip",
 			"style": {
-				"navigationBarTitleText": "我的工资条"
+				"navigationBarTitleText": "我的工资条",
+				"bz":"APP端-科目1-工资部分_员工-工资条 副本"
 			}
 		}, {
 			"path": "pages/subjectThree/sales_receipts",
 			"style": {
+				"bz":"APP-科三续_销售凭证 反腐审计异常",
 				"navigationBarTitleText": "销售凭证"
 			}
 		}, {
@@ -325,6 +339,7 @@
 			"path": "pages/subjectThree/msg_gl",
 			"style": {
 				"navigationBarTitleText": "消息",
+				"bz":"消息-01",
 				"usingComponents": {
 					"van-tab": "/wxcomponents/tab/index",
 					"van-tabs": "/wxcomponents/tabs/index"
