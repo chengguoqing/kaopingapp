@@ -2,7 +2,7 @@
 <template>
 	<view class="pm100 bgff pd">
 
-		<view class="fz26 z9 pt20 ">
+		<view class="fz28 z9 pt20 ">
 			2018年10月19日
 		</view>
 		<view class="fz26 z9 pt20 pm20">
@@ -101,7 +101,7 @@
 			<view class="sd_jhh_df ls">
 				17:50
 			</view>
-			<view class="ls fz26">
+			<view class="ls_er fz26">
 				人脸识别成功
 			</view>
 			<view class="z9 fz28 djg_jh_det ab">

@@ -3,23 +3,23 @@
 		<view class="bgff pm20">
 
 
-<view class="box cen dsf_ddrertxc bbm" >
-		<navigator url="/pages/subjectOne/statistical_analysis_fa" class="box_a df_fd_sdrert act" >
-			<text class="pd fz32 z6">罚</text>
-		</navigator>
-		
-		<navigator url="/pages/subjectOne/statistical_analysis_jiang" class="box_a df_fd_sdrert" >
-			<text class="pd fz32 z6">奖</text>
-		</navigator>
-		
-		
-	</view>
-	
-	
-	
+			<view class="box cen dsf_ddrertxc bbm">
+				<navigator url="/pages/subjectOne/statistical_analysis_fa" class="box_a df_fd_sdrert act">
+					<text class="pd fz32 z6">罚</text>
+				</navigator>
 
-		<!-- 	<tab_qh :sd_dfg="sd_dfg"></tab_qh> -->
-		
+				<navigator url="/pages/subjectOne/statistical_analysis_jiang" class="box_a df_fd_sdrert">
+					<text class="pd fz32 z6">奖</text>
+				</navigator>
+
+
+			</view>
+
+
+
+
+			<!-- 	<tab_qh :sd_dfg="sd_dfg"></tab_qh> -->
+
 			<view class="dsf_jh_deeretxcrf ">
 
 				<view class="box pd mt20">
@@ -30,8 +30,8 @@
 						</view>
 					</view>
 					<view class="box_a pl20">
-						<view class="pr dsf_jh_ddrtxf br ">
-							<text class="z6 fz26 ml20 cz">2018-11-4 2018-11-6</text>
+						<view class="pr dsf_jh_ddrtxf br " @click="is_riqi=true">
+							<text class="z6 fz26 ml20 cz">{{kaishi}}</text>
 							<icon class="dx icon-down cz"></icon>
 						</view>
 					</view>
@@ -53,7 +53,7 @@
 
 		</view>
 
-		<view class="pt20 mt20 bgff pm100">
+		<view class="pt20 mt20 bgff pm50">
 			<view class="fz32 z3 cen ">
 
 				人员占比
@@ -73,17 +73,22 @@
 			</view>
 
 		</view>
+		<view class="df_rili_deeret" v-if="is_riqi">
+			<xuzriqi @huitiao="huitiao"></xuzriqi>
+		</view>
 
 	</view>
 </template>
 <script>
 	import tab_qh from "@/components/tab_qh.vue"
 	import qitatubiao from "@/components/qitatubiao.vue"
-
+	import xuzriqi from "@/components/xuzriqi.vue"
 
 	export default {
 		data() {
 			return {
+				kaishi: "2018-11-4 2018-11-6",
+				is_riqi: false,
 				sd_sdf: [{
 						cls: "",
 						href: "/pages/subjectOne/send_bill_me",
@@ -115,26 +120,41 @@
 		},
 		components: {
 			tab_qh,
-			qitatubiao
+			qitatubiao,
+			xuzriqi
 		},
-		methods: {},
+		methods: {
+			huitiao(e) {
+				this.is_riqi = false
+				this.kaishi = e
+			}
+		},
 		mounted() {
 			this.PieOption = {
 				xAxis: {
 					type: 'category',
-					data: ['迟到', '早退', '上班瞌睡', '3S问题']
+					boundaryGap: false,
+
+
+					data: ['迟到', '早退', '上班瞌睡', '3S问题'],
+					axisLine: { //最外面的边框颜色
+						lineStyle: {
+							color: "#666"
+						}
+					},
 				},
 				grid: {
 					left: '3%',
 					right: '4%',
+					width: "90%",
 					bottom: "3%",
 					height: "100%",
-
 					containLabel: true
 				},
 
 				yAxis: {
-					type: 'value'
+					type: 'value',
+					show: false, //去掉背景线
 				},
 				series: [{
 					data: [120, 200, 150, 80],
@@ -162,7 +182,7 @@
 				series: [{
 					name: '访问来源',
 					type: 'pie',
-					radius: '100%',
+					radius: '90%',
 					data: [{
 							value: 20,
 							name: '覃正'
@@ -205,7 +225,6 @@
 	.dsf_jh_ddrtxf .dx {
 		position: absolute;
 		right: 20upx;
-		top: 8upx;
 	}
 
 	.dsf_jh_ddrtxf.ab {

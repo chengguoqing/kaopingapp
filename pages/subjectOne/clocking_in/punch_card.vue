@@ -1,15 +1,15 @@
 <template>
 	<view class="bgff pm100">
-		<view class="pt20 pm20 fz30 pd">
+		<view class="pt20 pm20 fz28 z6 pd">
 			2018年10月19日
 		</view>
 		<view class="map_dituer">
 			<map style="width: 100%; height: 100%;" :latitude="latitude" :longitude="longitude" :markers="covers">
 			</map>
 		</view>
-		<view class="pd pt20 fz32 z3 ln">
+		<view class="pd pt20 fz28 z6 ln">
 			当前位置：海口市迎宾路棕榈公寓
-			<view class="fz28 ls">
+			<view class="fz30 mt10 ls">
 				<text class="dian_ddf f_b cz yj"></text>
 				上班时间：8:00
 			</view>

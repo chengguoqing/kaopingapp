@@ -3,7 +3,7 @@
 	
 		
 
-		<tab_qh :sd_dfg="sd_dfg"></tab_qh>
+		<tab_qh :sd_dfg="sd_dfg" @huidr="is_riqerti=true"></tab_qh>
 	
 		<view class="dsf_jh_deeretxcrf ">
 			<view class="box pd mt20">
@@ -25,7 +25,7 @@
 			
 			
 			<view class="sd_quyg_ert cen ov">
-				<view class="fz30 mt70">
+				<view class="fz28 mt70 z9">
 					余额
 				</view>
 				<view class="ls fz50 mt20">
@@ -64,27 +64,32 @@
 		<view class="yopushangjiao fz30" v-if="is_kh_d">
 			<text class="uy_rrttxcdd"></text>
 			<view class="fkiy_list cf" @click="is_kh_d=false">
-				<icon class="dx icon-add fz40 cz"></icon>
+				<!-- <icon class="dx icon-add fz40 cz"></icon> -->
 				<text class="cz">使用申请</text>
 			</view>
 			<view class="fkiy_list cf ab btm" @click="is_kh_d=false">
-				<icon class="dx icon-add fz40 cz"></icon>
+			<!-- 	<icon class="dx icon-add fz40 cz"></icon> -->
 				<text class="cz">使用记录</text>
 			</view>
 		</view>
 
 
 
+		<view class="df_rili_deeret ab" v-if="is_riqerti">
+			<xuzriqi @huitiao="huitiao"></xuzriqi>
+		</view>
 
 
 	</view>
 </template>
 <script>
 	import tab_qh from "@/components/tab_qh.vue"
+	import xuzriqi from "@/components/xuzriqi.vue"
 	export default {
 		data() {
 			return {
 				is_kh_d: false,
+				is_riqerti:false,
 				sd_dfg: [{
 					name: "当天",
 					cls: "act"
@@ -108,10 +113,18 @@
 			}
 		},
 		components: {
-			tab_qh
+			tab_qh,
+			xuzriqi
 		},
-		methods: {},
-		mounted() {},
+		methods: {
+			huitiao(e){
+				this.is_riqerti=false
+				this.kaishi=e
+			}
+		},
+		mounted() {
+		
+		},
 		onNavigationBarButtonTap() {
 			this.is_kh_d = true
 		}
@@ -154,7 +167,6 @@
 	.dsf_jh_ddrtxf .dx {
 		position: absolute;
 		right: 20upx;
-		top: 8upx;
 	}
 	.dsf_jh_ddrtxf.ab{
 		width: 260upx;

@@ -1,12 +1,12 @@
 <template>
 	<view class="pm50">
 		<view class="pr dfg_drrt pm20" :class="iy_sdf">
-			<rili :is_ddf="is_ddf" @sddffff="sddffff"></rili>
+ <rili :is_ddf="is_ddf"  is_down="act" is_hd="act"></rili>
 
 		</view>
 
 
-		<view class="mt50 ">
+		<view class="mt40 ">
 			<view class="sd_jh_df_drt pr dsf_dffsdfre aa">
 				<view class="jidu_eertt"></view>
 				<view class="sd_hg_df yj aa">
@@ -27,7 +27,7 @@
 		</view>
 
 
-		<view class="pd df_k_paher bgff mt50">
+		<view class="pd df_k_paher bgff mt60">
 			<image src="../../../static/img/user_icon.png" class="user_icon_der fl"></image>
 			<view class="ov pl20 box pt20">
 				<view class="box_a">
@@ -60,7 +60,7 @@
 			总扣分：0分
 		</view>
 
-		<view class="bgff   pt20 pm20 bbm" v-for="(sd,idx) in ['考','问','监']">
+		<view class="bgff   pt20 pm20 bbm" v-for="(sd,idx) in ['考','问','临']">
 			<view class="sd_jh_dfdf box " :class="'sd_sds'+idx">
 				<view class="box_b">
 					<view class="fz30 f_b">【<text class="ls_er">{{sd}}</text>】每日一考</view> <br>

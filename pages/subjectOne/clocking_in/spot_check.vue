@@ -1,6 +1,6 @@
 <template>
 	<view class="pd bgff">
-		<view class="pt20 pm20 fz30 z3">
+		<view class="pt20 pm20 fz28 z6">
 			> 海口分公司 > 软件事业部
 		</view>
 
@@ -11,10 +11,16 @@
 
 		<view class="dx_row fz30 z3 mt20">
 			<view class="dx_col_8">
+				 <picker class="picker-item" mode="selector" :range="textList" >
 				处理状态 <icon class="dx icon-down"></icon>
+				</picker>
 			</view>
 			<view class="dx_col_8">
+				<picker class="picker-item" mode="selector" :range="textList" >
+
 				打卡状态 <icon class="dx icon-down"></icon>
+				</picker>
+
 			</view>
 		</view>
 
@@ -44,10 +50,10 @@
 
 					</view>
 
-					<view class="mt40 fz28">
-						抽查通过率 <text class="ls fz24 ml20">打卡正常</text>
+					<view class="mt40 fz26 z6">
+						抽查通过率 <text class="ls fz22 ml20">打卡正常</text>
 					</view>
-					<view class="fz50 ls">
+					<view class="fz40 ls">
 						100%
 					</view>
 					</view>
@@ -69,7 +75,13 @@
 <script>
 	export default {
 		data() {
-			return {}
+			return {
+				textList: [
+                'text1',
+                'text2',
+                'text3'
+            ],
+			}
 		},
 		components: {},
 		methods: {},
@@ -78,10 +90,10 @@
 </script>
 <style scoped>
 	.f_jh_derrtcr {
-		height: 80upx;
-		line-height: 80upx;
+		height: 70upx;
+		line-height: 70upx;
 		background: #fff;
-		padding-top: 20upx;
+		padding-top: 15upx;
 		padding-left: 20upx;
 	}
 

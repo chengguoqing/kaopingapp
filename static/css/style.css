@@ -242,5 +242,15 @@
 }
 
 	.red{
-		color: #ff4300 !important;
+		color: #ff4300 !important; 
+	}
+	
+	.df_rili_deeret {
+		position: absolute;
+		width: 100%;
+		top: 200upx;
+		z-index: 10000;
+	}
+	.df_rili_deeret.ab{
+		top: 100upx;
 	}

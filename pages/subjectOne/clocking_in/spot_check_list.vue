@@ -2,9 +2,12 @@
 	<view class="pd bgff">
 		<view class="pt20 pm20 fz32 touy_dert pr pl20">
 			<text class="bian_kside"></text>
+			<picker class="picker-item" mode="selector" :range="textList" >
+
 			海口分公司
 			<text class="fz26 z3 ml20">按下级部门</text>
 			<icon class="dx icon-down"></icon>
+			</picker>
 		</view>
 
 		<view class="dx_row dsf_roww_er">
@@ -45,7 +48,11 @@
 	export default {
 		data() {
 			return {
-				
+					textList: [
+					'text1',
+					'text2',
+					'text3'
+				],
 			}
 		},
 		components: {
@@ -63,7 +70,7 @@
 	.bian_kside {
 		position: absolute;
 		left: 0;
-		top: 28upx;
+		top: 38upx;
 		height: 30upx;
 		width: 4upx;
 		background: #489FF6;

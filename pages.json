@@ -7,6 +7,12 @@
 			}
 
 		}, {
+			"path": "pages/test",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+
+		}, {
 			"path": "pages/subjectOne/employee_statistical_analysis_jiang",
 			"style": {
 				"navigationBarTitleText": "统计分析",
@@ -83,13 +89,15 @@
 		}, {
 			"path": "pages/subjectOne/landing_card/landing_card_list_er",
 			"style": {
-				"navigationBarTitleText": "落地卡列表二"
+				"navigationBarTitleText": "落地卡列表二",
+				"bz": "APP端-科目1-落地卡部分_直接上级-落地卡列表"
+
 			}
 		}, {
 			"path": "pages/subjectOne/landing_card/landingcard_er",
 			"style": {
 				"navigationBarTitleText": "落地卡二",
-
+				"bz": "APP端-科目1-落地卡部分_直接上级-落地卡2",
 				"app-plus": {
 					"bounce": "none", //关闭窗口回弹效果
 					"titleNView": {
@@ -107,6 +115,7 @@
 			"path": "pages/subjectOne/landing_card/landingcard",
 			"style": {
 				"navigationBarTitleText": "落地卡",
+				"bz": "APP端-科目1-落地卡部分_员工-落地卡编写",
 				"app-plus": {
 					"bounce": "none", //关闭窗口回弹效果
 					"titleNView": {
@@ -123,12 +132,14 @@
 		}, {
 			"path": "pages/subjectOne/landing_card/landing_card_list",
 			"style": {
-				"navigationBarTitleText": "落地卡列表"
+				"navigationBarTitleText": "落地卡列表",
+				"bz": "APP端-科目1-落地卡部分_间接上级-落地卡列表"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/spot_check_list",
 			"style": {
-				"navigationBarTitleText": "抽检-图表列表"
+				"navigationBarTitleText": "抽检-图表列表",
+				"bz": "APP-科目1-考勤部分_间接上级-抽检公司列表2"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/clock_out",
@@ -139,6 +150,7 @@
 			"path": "pages/subjectOne/clocking_in/punch_card",
 			"style": {
 				"navigationBarTitleText": "打卡",
+				"bz": "APP-科目1-考勤部分_直接上级-打卡",
 				"app-plus": {
 					"bounce": "none", //关闭窗口回弹效果
 					"titleNView": {
@@ -156,6 +168,7 @@
 			"path": "pages/subjectOne/clocking_in/direct_inspection_list",
 			"style": {
 				"navigationBarTitleText": "直检（10月23日）",
+				"bz": "APP-科目1-考勤部分_直接上级-直检列表",
 				"app-plus": {
 					"bounce": "none", //关闭窗口回弹效果
 					"titleNView": {
@@ -171,31 +184,32 @@
 		}, {
 			"path": "pages/subjectOne/clocking_in/spot_check",
 			"style": {
+				"bz": "APP-科目1-考勤部分_直接上级-直检列表2 副本 2",
 				"navigationBarTitleText": "抽检（10月23日）"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/movement",
 			"style": {
 				"navigationBarTitleText": "行动轨迹分布图",
-				"bz":"APP-科目1-考勤部分_员工视角-行动轨迹"
+				"bz": "APP-科目1-考勤部分_员工视角-行动轨迹"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/department_holidays",
 			"style": {
 				"navigationBarTitleText": "设置部门公休日",
-				"bz":"APP-科目1-考勤部分_直接上级-设置部门公休日"
+				"bz": "APP-科目1-考勤部分_直接上级-设置部门公休日"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/abnormal_complaints_er",
 			"style": {
 				"navigationBarTitleText": "异常申诉二",
-				"bz":"APP-科目1-考勤部分_直接上级-打卡异常申诉"
+				"bz": "APP-科目1-考勤部分_直接上级-打卡异常申诉"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/abnormal_complaints",
 			"style": {
 				"navigationBarTitleText": "异常申诉",
-				"bz":"APP-科目1-考勤部分_员工视角-打卡异常申诉"
+				"bz": "APP-科目1-考勤部分_员工视角-打卡异常申诉"
 			}
 		}, {
 			"path": "pages/subjectOne/clocking_in/direct_inspection",
@@ -211,20 +225,20 @@
 			"path": "pages/subjectOne/leave_the_chuli",
 			"style": {
 				"navigationBarTitleText": "我开出的-处理",
-				"bz":"APP端-科目1-奖罚部分_上级-开罚单"
+				"bz": "APP端-科目1-奖罚部分_上级-开罚单"
 			}
 		}, {
 			"path": "pages/subjectOne/leave_the",
 			"style": {
 				"navigationBarTitleText": "我开出的"
-				
+
 			}
 		}, {
 			"path": "pages/subjectOne/details_test_er",
 			"style": {
 				"navigationBarTitleText": "考试详情",
 				"usingComponents": {
-					"bz":"APP端-科目1-考试部分_会场客户-考试详情-选题-22",
+					"bz": "APP端-科目1-考试部分_会场客户-考试详情-选题-22",
 					"van-popup": "/wxcomponents/popup/index"
 				}
 			}
@@ -232,7 +246,7 @@
 			"path": "pages/subjectOne/record_details",
 			"style": {
 				"navigationBarTitleText": "成绩详情",
-				"bz":"APP端-科目1-考试部分_会场客户-成绩详情"
+				"bz": "APP端-科目1-考试部分_会场客户-成绩详情"
 			}
 		}, {
 			"path": "pages/subjectOne/details_test",
@@ -243,69 +257,69 @@
 			"path": "pages/subjectOne/attendance_details",
 			"style": {
 				"navigationBarTitleText": "考勤详情",
-				"bz":"APP端-科目1-工资部分_员工-考勤扣除"
+				"bz": "APP端-科目1-工资部分_员工-考勤扣除"
 			}
 		}, {
 			"path": "pages/subjectOne/behavioral_details",
 			"style": {
 				"navigationBarTitleText": "行为详情",
-				"bz":"APP端-科目1-工资部分_员工-行为扣除"
+				"bz": "APP端-科目1-工资部分_员工-行为扣除"
 			}
 		}, {
 			"path": "pages/subjectOne/labor_summary_er",
 			"style": {
 				"navigationBarTitleText": "人工费用汇总",
-				"bz":"APP端-科目1-工资部分_上级-人工费用汇总2"
+				"bz": "APP端-科目1-工资部分_上级-人工费用汇总2"
 			}
 		}, {
 			"path": "pages/subjectOne/labor_summary",
 			"style": {
 				"navigationBarTitleText": "人工费用汇总",
-				"bz":"APP端-科目1-工资部分_上级-人工费用汇总"
+				"bz": "APP端-科目1-工资部分_上级-人工费用汇总"
 			}
 		}, {
 			"path": "pages/subjectOne/my_pay_slip",
 			"style": {
 				"navigationBarTitleText": "我的工资条",
-				"bz":"APP端-科目1-工资部分_员工-工资条 副本"
+				"bz": "APP端-科目1-工资部分_员工-工资条 副本"
 			}
 		}, {
 			"path": "pages/subjectThree/sales_receipts",
 			"style": {
-				"bz":"APP-科三续_销售凭证 反腐审计异常",
+				"bz": "APP-科三续_销售凭证 反腐审计异常",
 				"navigationBarTitleText": "销售凭证"
 			}
 		}, {
 			"path": "pages/subjectThree/goods_inventory_er",
 			"style": {
 				"navigationBarTitleText": "物品盘点",
-				"bz":"APP-科目三_物品盘点-直检 副本 2"
+				"bz": "APP-科目三_物品盘点-直检 副本 2"
 			}
 		}, {
 			"path": "pages/subjectThree/goods_inventory",
 			"style": {
 				"navigationBarTitleText": "物品盘点",
-				"bz":"APP-科目三_物品盘点-第一步"
-				
+				"bz": "APP-科目三_物品盘点-第一步"
+
 			}
 		}, {
 			"path": "pages/subjectThree/equipment_inventory",
 			"style": {
 				"navigationBarTitleText": "设备盘点(8月25)",
-				"bz":"APP-科目三_盘点清单列表"
+				"bz": "APP-科目三_盘点清单列表"
 
 			}
 		}, {
 			"path": "pages/subjectThree/Internal_marketing",
 			"style": {
 				"navigationBarTitleText": "内部购销列表",
-				"bz":"APP-科目三_内部购销列表"
+				"bz": "APP-科目三_内部购销列表"
 
 			}
 		}, {
 			"path": "pages/subjectThree/yield",
 			"style": {
-				"bz":"APP-科目三_产量详情-本周",
+				"bz": "APP-科目三_产量详情-本周",
 
 				"navigationBarTitleText": "产量-本周"
 
@@ -313,7 +327,7 @@
 		}, {
 			"path": "pages/subjectThree/yield_er",
 			"style": {
-				"bz":"APP-科目三_产量详情-本月",
+				"bz": "APP-科目三_产量详情-本月",
 
 				"navigationBarTitleText": "产量-本月"
 
@@ -322,13 +336,13 @@
 			"path": "pages/subjectTwo/examination_hall",
 			"style": {
 				"navigationBarTitleText": "科举大厅 ",
-				"bz":"APP端-科目2-考评部分-08"
+				"bz": "APP端-科目2-考评部分-08"
 			}
 		}, {
 			"path": "pages/subjectThree/purchasing_requisition",
 			"style": {
 				"navigationBarTitleText": "采购申请",
-				"bz":"APP-科目三_采购清单-新增采购清单",
+				"bz": "APP-科目三_采购清单-新增采购清单",
 				"usingComponents": {
 					"van-field": "/wxcomponents/field/index",
 					"van-cell": "/wxcomponents/cell/index",
@@ -339,7 +353,7 @@
 			"path": "pages/subjectThree/msg_gl",
 			"style": {
 				"navigationBarTitleText": "消息",
-				"bz":"消息-01",
+				"bz": "消息-01",
 				"usingComponents": {
 					"van-tab": "/wxcomponents/tab/index",
 					"van-tabs": "/wxcomponents/tabs/index"
@@ -349,7 +363,7 @@
 			"path": "pages/subjectThree/index",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"bz":"APP-科目三_App端工作台",
+				"bz": "APP-科目三_App端工作台",
 				"usingComponents": {
 					"van-notice-bar": "/wxcomponents/notice-bar/index",
 					"van-toast": "/wxcomponents/toast/index",
@@ -362,7 +376,7 @@
 			"path": "pages/subjectTwo/plan_details",
 			"style": {
 				"navigationBarTitleText": "计划详情",
-				"bz":"APP端-科目2-考评部分-17"
+				"bz": "APP端-科目2-考评部分-17"
 			}
 		}, {
 			"path": "pages/subjectTwo/keju",
@@ -377,19 +391,19 @@
 			"path": "pages/subjectTwo/finish_planxq",
 			"style": {
 				"navigationBarTitleText": "计划进度完成情况 ",
-				"bz":"APP端-科目2-考评部分-12"
+				"bz": "APP端-科目2-考评部分-12"
 			}
 		}, {
 			"path": "pages/subjectTwo/finish_plan",
 			"style": {
 				"navigationBarTitleText": "计划进度完成情况 ",
-				"bz":"APP端-科目2-考评部分-11"
+				"bz": "APP端-科目2-考评部分-11"
 			}
 		}, {
 			"path": "pages/subjectTwo/index",
 			"style": {
 				"navigationBarTitleText": "考评主页 ",
-				"bz":"APP端-科目2-考评部分-04",
+				"bz": "APP端-科目2-考评部分-04",
 				"usingComponents": {
 					"van-row": "/wxcomponents/row/index",
 					"van-col": "/wxcomponents/col/index"
@@ -399,13 +413,13 @@
 			"path": "pages/subjectTwo/my_evaluation",
 			"style": {
 				"navigationBarTitleText": "我的考评情况",
-				"bz":"APP端-科目2-考评部分-02"
+				"bz": "APP端-科目2-考评部分-02"
 
 			}
 		}, {
 			"path": "pages/subjectThree/sxy",
 			"style": {
-			
+
 				"navigationBarTitleText": "产量-本周"
 
 			}

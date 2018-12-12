@@ -62,7 +62,7 @@
 			</view>
 		</view>
 		</view>
-		<view class="mt20 btm dx_row cen fz26 z6">
+		<view class="mt20 btm dx_row cen fz22 z6">
 			<view class="dx_col_12  pt10 pm10 brm">
 				正常（2）
 			</view>

@@ -22,6 +22,9 @@
 					a.cls=""
 				})
 				sd.cls="act"
+				if(sd.name=="更多筛选"){
+					this.$emit("huidr")
+				}
 			}
 		},
 		mounted() {},

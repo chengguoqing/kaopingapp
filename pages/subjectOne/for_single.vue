@@ -6,7 +6,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					获奖人：
 				</view>
-				<view class="ov df_df_dsrtxr">
+				<view class="ov df_df_dsrtxr z6">
 					管玉华 JAVA开发
 				</view>
 			</view>
@@ -16,7 +16,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					金额：
 				</view>
-				<view class="ov df_df_dsrtxr">
+				<view class="ov df_df_dsrtxr z6">
 					10元
 
 				</view>
@@ -27,7 +27,7 @@
 				<view class="dx_col_5 df_df_dsrtxr">
 					事由：
 				</view>
-				<view class="ov pr20 df_df_dsrtxr">
+				<view class="ov pr20 df_df_dsrtxr z6">
 					上班瞌睡
 
 				</view>

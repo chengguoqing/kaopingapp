@@ -1,5 +1,5 @@
 <template>
-	<view class="pd ">
+	<view class="pd pt20">
 		<view class="" v-for="(sd,idx) in ['海口分公司','南京分公司','上海分公司']">
 
 			<view class="pt20 pm20 fz32 touy_dert pr pl20">
@@ -12,35 +12,35 @@
 					<view class="sd_jhb_dsdr ">
 						<image src="../../../static/img/bingtu.png"></image>
 						<view class="cf sdf_df_sdr">
-							<text class="fz28">常态</text><br>
+							<text class="fz26">常态</text><br>
 							<text class="fz18">(2/10)</text>
 						</view>
 
 						<view class="cf sdf_df_sdr ab">
-							<text class="fz28">问题</text><br>
+							<text class="fz26">问题</text><br>
 							<text class="fz18">(2/10)</text>
 						</view>
 
 
 						<view class="cf sdf_df_sdr ac">
-							<text class="fz28">临时</text><br>
+							<text class="fz26">临时</text><br>
 							<text class="fz18">(2/10)</text>
 						</view>
 
 					</view>
 
-					<view class="fz34 ">
+					<view class="fz28 ">
 						软件事业部
 					</view>
 
-					<view class="mt80 fz32">
+					<view class="mt60 fz28">
 						完成率
 					</view>
 					<view class="fz60">
 						30%
 					</view>
 
-					<view class="box mt20 pt10 df_dfftgcxr zhuse fz28 cen">
+					<view class="box mt20 pt10 df_dfftgcxr zhuse fz24 cen">
 						<view class="box_a df_right">
 							自评(10)
 						</view>

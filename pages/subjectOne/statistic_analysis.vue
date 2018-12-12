@@ -15,8 +15,8 @@
 						</view>
 					</view>
 					<view class="box_a pl20">
-						<view class="pr dsf_jh_ddrtxf br ">
-							<text class="z6 fz26 ml20 cz">2018-11-4 2018-11-6</text>
+						<view class="pr dsf_jh_ddrtxf br " @click="is_riqi=true">
+							<text class="z6 fz26 ml20 cz">{{kaishi}}</text>
 							<icon class="dx icon-down cz"></icon>
 						</view>
 					</view>
@@ -63,15 +63,20 @@
 			</view>
 
 		</view>
-
+	<view class="df_rili_deeret" v-if="is_riqi">
+			<xuzriqi @huitiao="huitiao"></xuzriqi>
+		</view>
 
 	</view>
 </template>
 <script>
 	import tab_qh from "@/components/tab_qh.vue"
+	import xuzriqi from "@/components/xuzriqi.vue"
 	export default {
 		data() {
 			return {
+				kaishi: "2018-11-4 2018-11-6",
+				is_riqi:false,
 				sd_sdf: [{
 						cls: "",
 						href: "/pages/subjectOne/send_bill_me",
@@ -109,9 +114,14 @@
 			}
 		},
 		components: {
-			tab_qh
+			tab_qh,
+			xuzriqi
 		},
 		methods: {
+			huitiao(e){
+				this.is_riqi=false
+				this.kaishi=e
+			},
 			serfdr(sd) {
 				if (sd.cls) {
 					sd.cls = ""
@@ -150,7 +160,6 @@
 	.dsf_jh_ddrtxf .dx {
 		position: absolute;
 		right: 20upx;
-		top: 8upx;
 	}
 
 	.dsf_jh_ddrtxf.ab {
