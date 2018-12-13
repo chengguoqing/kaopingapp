@@ -48,7 +48,7 @@
 			</view>
 
 			<view class=" pd bgff  dx_row pr gfh_jh_dertt btm">
-	
+
 				<view class="df_df_ertxc f_b cz">
 					<icon class="dx icon-icon-- fz40  z6"></icon>
 				</view>
@@ -58,15 +58,15 @@
 				<view class="right_ert">
 					<picker class="picker-item " mode="selector" :range="textList" @change="textChange">
 
-					<text class="fz26 z6">{{textList[textValue]}}</text>
-					<icon class="dx icon-right"></icon>
+						<text class="fz26 z6">{{textList[textValue]}}</text>
+						<icon class="dx icon-right"></icon>
 					</picker>
 
 				</view>
 
-				
 
-			
+
+
 
 
 			</view>
@@ -84,12 +84,12 @@
 							<icon class="dx icon-check cz df_c_ertx" :class="sd.cls"></icon>
 						</view>
 						<view class="f_b fz30 z3 cz ml10" :class="sd.cls=='act'?'del_x':''">
-							{{idx+1}}.项目分条完成情况，完成打钩
+							{{idx+1}}.{{sd.name}}
 						</view>
 					</view>
 
 
-					<view class="sd_oiu_row mb10" @click="add_xz_e">
+					<view class="sd_oiu_row mb10" @click="add_xz_e" v-if="!is_tji">
 
 
 						<icon class="dx icon-add fz40 ls cz"></icon>
@@ -97,6 +97,25 @@
 							点击添加检查项
 						</view>
 					</view>
+
+					<view class="sd_oiu_row mb10" v-else>
+
+
+						<icon class="dx icon-add fz40 ls cz fl"></icon>
+						<view class="ov fz30 z3 cz ml10">
+							<textarea placeholder="请输入" class="fz26 sdf_kjh_dfrt" rows="3"  v-model="nmn_sdff"/>
+							</view>
+						<view class="qc tr ">
+							<view class="sdfsd_df_Drtt" @click="is_tji=false">
+								取消
+							</view>
+							<view class="sdfsd_df_Drtt ab" @click="querener">
+								确认
+							</view>
+						</view>
+						
+					</view>
+
 
 
 
@@ -165,15 +184,20 @@
 					'进行中1',
 					'进行中2'
 				],
-				textValue:0,
+				textValue: 0,
+				nmn_sdff:"",
 				dsf_s_a: false,
 				jiancs: [{
+					name:"项目分条完成情况，完成打钩",
 					cls: "act"
 				}, {
+					name:"项目分条完成情况，完成打钩",
 					cls: ""
 				}, {
+					name:"项目分条完成情况，完成打钩",
 					cls: ""
 				}],
+				is_tji:false,
 				time: "2018年10月1日",
 			}
 		},
@@ -187,9 +211,22 @@
 				this.time = date_e[0] + "年" + date_e[1] + "月" + date_e[2] + "日";
 			},
 			add_xz_e() {
+				this.is_tji=true
+			
+			},
+			querener(){
+				if(!this.nmn_sdff){
+					uni.showToast({
+						title:"请输入内容",	
+						icon:"none"
+					})
+					return
+				}
 				this.jiancs.push({
-					cls: ""
+					name:this.nmn_sdff,
+					cls:""
 				})
+				this.is_tji=false
 			},
 			gx_sdf(sd) {
 				if (sd.cls) {
@@ -214,4 +251,26 @@
 		z-index: 1000;
 		background: red;
 	}
+	.sdf_kjh_dfrt{
+		width: 100%;
+		border: 0px;
+		padding: 10upx;
+	}
+	.sdfsd_df_Drtt{
+		display: inline-block;
+		width: 150upx;
+		height: 60upx;
+		line-height: 60upx;
+		text-align: center;
+		border: 1px solid #666;
+		color: #666;
+		font-size: 28upx;
+		margin-left: 20upx;
+		border-radius: 8upx;
+		}
+.sdfsd_df_Drtt.ab{
+	background: #449EF6;
+	color: #fff;
+	border: 1px solid #449EF6;
+}
 </style>

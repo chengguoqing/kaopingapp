@@ -25,8 +25,10 @@
 				<view class="box pd mt20">
 					<view class="box_a pr20">
 						<view class="pr dsf_jh_ddrtxf br ab">
-							<text class="z6 fz26 ml20 cz">软件事业部</text>
-							<icon class="dx icon-down cz"></icon>
+							<picker class="picker-item" mode="selector" :range="textList">
+								<text class="z6 fz26 ml20 cz">软件事业部</text>
+								<icon class="dx icon-down cz"></icon>
+							</picker>
 						</view>
 					</view>
 					<view class="box_a pl20">
@@ -87,6 +89,11 @@
 	export default {
 		data() {
 			return {
+				textList: [
+					'text1',
+					'text2',
+					'text3'
+				],
 				kaishi: "2018-11-4 2018-11-6",
 				is_riqi: false,
 				sd_sdf: [{

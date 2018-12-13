@@ -237,8 +237,9 @@
 			"path": "pages/subjectOne/details_test_er",
 			"style": {
 				"navigationBarTitleText": "考试详情",
+				"bz": "APP端-科目1-考试部分_会场客户-考试详情-选题-22",
 				"usingComponents": {
-					"bz": "APP端-科目1-考试部分_会场客户-考试详情-选题-22",
+					
 					"van-popup": "/wxcomponents/popup/index"
 				}
 			}

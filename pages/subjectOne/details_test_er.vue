@@ -43,7 +43,6 @@
 					<text class="ddf_dfggc" :class="sd.cls">{{sd.num}}</text>
 				</view>
 			</view>
-			
 		</van-popup>
 
 
